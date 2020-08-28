@@ -4,12 +4,17 @@
 @import "{{ site.theme }}";
 @import url("./olney_light.otf");
 
+@font-face {
+  font-family: "headersFont";
+  src: url("olney_light.otf");
+}
+
 * {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
 }
 
 h1, h2, h3, h4, h5, h6  {
-  font-family: 'Olney', 'Olney-Light', 'Olney Light', Helvetica, Arial, sans-serif !important;
+  font-family: 'headersFont', Helvetica, Arial, sans-serif !important;
 }
 
 aside * {
@@ -18,7 +23,7 @@ aside * {
 }
 
 aside .header {
-  font-family: 'Olney', Helvetica, Arial, sans-serif !important;
+  font-family: 'headersFont', Helvetica, Arial, sans-serif !important;
   font-size: larger;
   font-weight: bold;
 }
