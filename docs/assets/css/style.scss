@@ -17,6 +17,14 @@ h1, h2, h3, h4, h5, h6  {
   font-family: 'headersFont', Helvetica, Arial, sans-serif !important;
 }
 
+header h1 {
+  font-size: 3.5em;
+}
+
+#main-content h1 {
+  font-size: 2em;
+}
+
 aside * {
   display: block;
   margin-bottom: 7px;
