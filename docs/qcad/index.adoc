@@ -10,38 +10,38 @@ Ten przewodnik przedstawia podstawy QCAD'a. Wiele efektów w programie QCAD moż
 
 Przewodnik nie jest wyczerpującą encyklopedią programu, a raczej stara się przedstawić jeden, wyważony, łatwy w użyciu sposób produkji rysunków technicznych.
 
-Podane procedury skupiają się na użyciu myszki, ograniczając użycie klawiatury do koniecznego minimum. Powodem jest to aby uczynić naukę podstaw QCAD'a jak najłatwiejszą, kosztem szybkości rysowania.
+Podane procedury skupiają się na użyciu myszy, ograniczając użycie klawiatury do koniecznego minimum. Powodem jest to aby uczynić naukę podstaw QCAD'a jak najłatwiejszą, kosztem szybkości rysowania.
 
 === Konwencje
 
 ==== Ścieżki dostępu
 Narzędzia dostępne w programie można wybrać na wiele sposobów. Na przykład, to samo narzędzie można wybrać z menu tekstowego lub klikając ikonę na palecie narzędzi. W większości przypadków, dla uproszczenia i jednoznaczności komunikacji niniejszy przewodnik ogranicza się do wybierania narzędzi z menu tekstowego.
 
-Dotarcie do właściwego narzędzia, opcji lub komendy zwykle wymaga kilku kroków, o których sekwencji można myśleć jako o "ścieżce dostępu". Do reprezentacji tych ścieżek, ten przewodnik używa konwencji zilustrowanej następującym przykładem:
+Dotarcie do właściwego narzędzia, opcji lub komendy zwykle wymaga kilku kroków, o których sekwencji można myśleć jako o "ścieżce dostępu". Do reprezentacji tych ścieżek ten przewodnik używa konwencji zilustrowanej następującym przykładem:
 ====
-_Edit > Drawing Preferences > General > Drawing Unit > Measurement system_
+_Edit > *Drawing preferences* > General > Drawing Unit > Measurement system_
 ====
 
-Niektóre z członów ścieżki mogą się odnosić do tekstowych menu, a inne do opcji lub pól w oknach dialogowych. Powyższa, przykładowa ścieżka pozwala na znalezienie pola do ustawienia systemu miar. Jest ona zilustrowana na zrzucie ekranu poniżej; zauważ jak elementy ścieżki korespondują do elementów zaznaczonych na poniższej ilustracji:
+Niektóre z członów ścieżki mogą się odnosić do tekstowych menu, a inne do opcji lub pól w oknach dialogowych. Powyższa, przykładowa ścieżka pozwala na znalezienie pola do ustawienia systemu miar. Jest ona zilustrowana na zrzucie ekranu poniżej; zauważ jak segmenty ścieżki korespondują do elementów zaznaczonych na poniższej ilustracji:
 
 .Przykładowa ścieżka dostępu
 image::img/tool_selection_paths.png[Przykładowa ścieżka dostępu - ilustracja, align="center"]
 
-Ta konwencja jest używana gdzie jest to tylko możliwe. Tylko w miejscach, gdzie jest ona niewystarczająca, przewodnik ucieka się do zrzutów ekranu.
+Ta konwencja jest używana gdzie jest to tylko możliwe. Tylko w miejscach gdzie jest ona niewystarczająca przewodnik ucieka się do zrzutów ekranu.
 
 ==== Klikanie
 `LMB`:: Pojedyncze kliknięcie lewego klawisza myszy (_Left Mouse Button_).
-`LMB2`:: Dwukrotne kliknięcie lewego klawisza myszy.
+`LMBx2`:: Dwukrotne kliknięcie lewego klawisza myszy.
 `RMB`:: Pojedyncze kliknięcie prawego klawisza myszy (_Right Mouse Button_).
 
 ==== Panele
-Gdy przewodnik mówi o _Block List_,  _Layer List_ lub _Property Editor_, to odnosi się do paneli po prawej stronie ekranu.
+Gdy przewodnik mówi o _Block List_,  _Layer List_ lub _Property Editor_, to odnosi się on do paneli po prawej stronie ekranu.
 
 Rozdział xref:#kluczowe-panele[Włącz kluczowe panele] opisuje jak je włączyć i gdzie je znaleźć.
 
 ==== Domyślne ustawienia
 
-W wielu oknach dialogowych, przewodnik rekomenduje zmianę pewnych pól, ale ignoruje inne, które mogą być w danym oknie obecne.
+W wielu oknach dialogowych przewodnik rekomenduje zmianę pewnych pól, ale ignoruje inne, które mogą być w danym oknie obecne.
 
 W takim przypadku pozostaw the "niewymienione" pola jak są  - chyba, że już je znasz i wiesz jakie są ich funkcje i konsekwencje zmiany ich wartości.
 
@@ -61,6 +61,8 @@ Każda z tych faz opisana jest w indywidualnych rozdziałach poniżej.
 [#wstepna-konfiguracja-programu]
 == Skonfiguruj QCAD'a
 
+Instrukcje w tej sekcji zwykle wystarczy wykonać tylko raz, jako że ustawiają one konfigurację całego programu i dla wszystkich nowo tworzonych rysunków. Może się zdarzyć, że po re-instalacji lub po instalacji nowszej wersji programu, niektóre z ustawień trzeba będzie przejrzeć i powtórzyć.
+
 [#kluczowe-panele]
 === Włącz kluczowe panele
 Upewnij się, że powyższe opcje są zaznaczone/aktywne:
@@ -69,7 +71,7 @@ Upewnij się, że powyższe opcje są zaznaczone/aktywne:
 * _View > Layer List_
 * _View > Property Editor_
 
-Gdy te opcje są zaznaczone, korespondujące panele powinny być widoczne po prawej stronie ekranu, podobnie jak na poniższych ilustracjach:
+Gdy te opcje są zaznaczone, korespondujące panele powinny być widoczne po prawej stronie ekranu, wyglądając podobnie jak na poniższych ilustracjach. Zauważ, że rozmieszczenie paneli i ich "zakładek" różni się między dwiema ilustracjami. Wynika to z tego, że to rozmieszczenie można zmieniać, tak aby dostęp do nich był najwygodniejszy:
 
 image::img/key_panels_all_overlapping.png[float="left"]
 image::img/key_panels_property_editor_separate.png[]
@@ -87,11 +89,11 @@ Jeśli punkt, który naprawdę nas interesuje (np. punkt przecięcia jakiejś li
 ====
 
 ==== Wyłącz wyświetlanie siatki
-_Edit > Application Preferences > Defaults for New Drawings > Grid_:
+_Edit > *Application* Preferences > *Defaults for New Drawings* > Grid_:
 
 * Odznacz _Display grid_ w panelach po prawej stronie: _Viewport 1_, _Vieport 2_, _Viewport 3_, _Viewport 4_.
 
-Wyłączenie siatki w tym miejscu spowoduje, że nie będzie ona widoczna w _nowo_ utworzonych rysunkach. Jeśli masz już istniejący rysunek na ekranie, i chcesz wyłączyć siatkę w nim, powtórz powyższy krok w lokacji _Edit > *Drawing* Preferences > General > Grid_:
+Wyłączenie siatki w tym miejscu spowoduje, że nie będzie ona widoczna w _nowo_ utworzonych rysunkach. Jeśli masz już istniejący rysunek na ekranie, i chcesz wyłączyć siatkę w nim, powtórz powyższy krok w lokacji _Edit > *Drawing Preferences* > General > Grid_.
 
 ==== Wyłącz automatyczne przyciąganie do punktów siatki
 _Edit > Application Preferences > Snap > Auto snap_:
@@ -118,11 +120,11 @@ _File > New_.
 == Ustaw parametry rysunku
 
 === Wybierz jednostki
-_Edit > Drawing Preferences > General > Drawing Unit_:
+_Edit > *Drawing preferences* > General > Drawing Unit_:
 
-* _Drawing unit_ - jednostki używane w modelu i w wymiarach na wydruku. Dla rysunków stali lub drobnych, precyzyjnych przedmiotów wybierz milimetry, dla rysunków obiektów murowanych lub drewnianych wybierz centymetry.
-* _Paper unit_ - jednostki używane do określania rozmiaru papieru oraz wymiarów tabliczek i ramek. Zawsze ustaw milimetry.
-* _Measurement system_ - jednostki określające grubości linii i odstępy kreskowania  , _Metric_ (metryczny, czyli SI: centymetry, milimetry) lub _Imperial_ (stopy, cale).
+_Drawing unit_:: Jednostki używane w modelu i w wymiarach na wydruku. Dla rysunków stali lub drobnych, precyzyjnych przedmiotów wybierz milimetry, dla rysunków obiektów murowanych lub drewnianych wybierz centymetry.
+_Paper unit_:: Jednostki używane do określania rozmiaru papieru oraz wymiarów tabliczek i ramek. Zawsze ustaw milimetry.
+_Measurement system_:: Jednostki określające grubości linii i odstępy kreskowania  , _Metric_ (metryczny, czyli SI: centymetry, milimetry) lub _Imperial_ (stopy, cale).
 
 [#model]
 == Narysuj model
@@ -152,28 +154,13 @@ Oszczędzi Ci to dużo czasu i wysiłku. Te "sposoby" sprowadzają się do takie
 
 // todo specific examples, tips
 
-[#model-rozmieszczenie-detali]
-=== Rozmieść detale
-Rysując model nie przejmujemy się detalami rozmieszczenia elementów na rysunku, ale odrobina planowania jest potrzebna, jako że znacznie ułatwi nam ona przygotowanie wydruku później.
-
-Na przykład, rysując konstrukcję stalową zwykle potrzebujemy przedstawić widok (lub widoki) elementu wysyłkowego oraz, jako osobne widoki, pojedyncze detale jakie się na ten widok składają. Rysując takie elementy w modelu wyobraź sobie, że każdy z nich jest obrysowany jego własną, prostokątną granicą. Następnie, rozmieść je tak aby te granice się nie nakładały.
-
-Porównaj następujące dwa przykłady; szara, przerywana linia ilustruje wyobrażone "granice" każdego z elementów:
-
-.Niepoprawne rozmieszczenie elementów w modelu - granice się przecinają
-image::img/model_rozmieszczenie_detali_niepoprawne.png[]
-
-.Poprawne rozmieszczenie elementów w modelu - granice się nie przecinają
-image::img/model_rozmieszczenie_detali_poprawne.png[]
-
-Wartość tego podejścia stanie się jasny w rozdziale xref:#prezentacja[Przedstaw model na wydruku].
-
 [#prezentacja]
 == Przedstaw model na wydruku
 Innymi słowy: przygotuj prezentację. Dopiero tutaj będziemy myśleć o skali, wymiarach i opisach.
 
 === Stwórz nową stronę
-* _Block > Add Layout Block_.
+_Block > Add Layout Block_:
+
 * Nazwij nową stronę w polu _Layout name_, np. "02 - rygiel 1", albo "03 - słup 2".
 * Zignoruj pole _Order_.
 
@@ -185,7 +172,8 @@ image::img/presentation_current_page_selection.png[]
 To automatycznie włącza podgląd wydruku. W tej chwili, strona może jeszcze nie być widoczna na ekranie - naprawimy to za moment.
 
 === Ustaw rozmiar i orientację strony
-_Edit > Drawing preferences > Printing > Page_
+_Edit > *Drawing preferences* > Printing > Page_:
+
 * Ustaw orientację strony w _Page Orientation_.
 * Ustaw rozmiar papieru w _Paper > Paper size_.
 
@@ -230,9 +218,6 @@ Zaznacz obrys nieco większy niż sam element, klikając w czarne tło:
 * `LMB` w rogu po przekątnej.
 
 To zabiera Cię z powrotem do podglądu wydruku (z białym tłem).
-
-:tip-caption: porada
-TIP: To jest sytuacja, gdzie zaleta xref:#model-rozmieszczenie-detali[rozmieszczenia detali w modelu tak żeby ich obrysy się nie przecinały] staje się widoczna.
 
 ==== Umieść widok na stronie
 Program czeka na wskazanie pozycji gdzie chcesz umieścić widok elementu. Poruszaj kursorem myszy i zauważ, że widok elementu jest do niego "przyklejony" i rusza się razem z nim.
@@ -284,7 +269,7 @@ Upewnij się, że warstwa "wymiary - papier" jest aktywna w _Layer list_. Jeśli
 
 * Wybierz narzędzie do wymiarowania.
 * Upewnij się, że na pasku ustawień narzędzia skala (_Scale_) jest ustawiona na _Auto_:
-image:img/tool_bar_dimensions_scale_auto.png[]]
+image:img/tool_bar_dimensions_scale_auto.png[]
 * Nadaj elementowi wymiar:
 ** `LMB` pierwszy punkt wymiaru,
 ** `LMB` drugi punkt wymiaru,
