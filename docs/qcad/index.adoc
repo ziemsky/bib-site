@@ -47,14 +47,14 @@ W takim przypadku pozostaw the "niewymienione" pola jak są  - chyba, że już j
 
 === Proces rysowania
 
-Przed przystąpieniem do rysowania, upewnij się, że program jest właściwie skonfigurowany, wykonując kroki z rozdziału xref:#wstepna-konfiguracja-programu[Skonfiguruj QCAD'a].
+Przed przystąpieniem do rysowania po raz pierwszy, upewnij się, że program jest właściwie skonfigurowany, wykonując kroki z rozdziału xref:#wstepna-konfiguracja-programu[].
 
 Process tworzenia nowego rysunku sprowadza się do następujących faz:
 
-* xref:#nowy-rysunek[Stwórz nowy rysunek]
-* xref:#parametry_rysunku[Ustaw parametry rysunku]
-* xref:#model[Narysuj model]
-* xref:#prezentacja[Przedstaw model na wydruku]
+* xref:#nowy-rysunek[]
+* xref:#parametry-rysunku[]
+* xref:#model[]
+* xref:#prezentacja[]
 
 Każda z tych faz opisana jest w indywidualnych rozdziałach poniżej.
 
@@ -112,6 +112,17 @@ _Edit > Application Preferences > File > Print Preview_:
 
 xref:#niedrukowalna-warstwa[Co to jest drukowalna i niedrukowalna warstwa?]
 
+=== Wyłącz linię komend
+Linia komend jest użyteczna jako mechanizm szybszego wydawania komend, ale wymaga częstszego użycia klawiatury. Jako że ten przewodnik ogranicza użycia klawiatury do absolutnego minimum, wyłącz linię komend dla zaoszczędzenia miejsca na ekranie i zredukowania "wizualnego hałasu":
+
+Odznacz: _View > Command Line_
+
+=== Włącz wyświetlanie pomiarów w oknie dialogu
+
+Zaznacz: _Edit > Application Preferences > Widgets > Command Line > Show information as dialog_
+
+To spowoduje wyświetlania wartości "tymczasowych" pomiarów (tzn. wykonanych narzędziami z menu _Info_) w oknach dialogowych, zamiast w linii komend (którą wyłączyłeś w poprzednim kroku).
+
 [#nowy-rysunek]
 == Stwórz nowy rysunek
 _File > New_.
@@ -131,13 +142,11 @@ _Measurement system_:: Jednostki określające grubości linii i odstępy kresko
 
 Używając narzędzi rysowania, narysuj obiekty, które są tematem twojego rysunku. Pamiętaj, że w modelu nie przejmujemy się skalą, bo w nim wszystko rysujemy w skali 1:1.
 
-Ostateczne/czyste wymiary i opisy zostaną dodane później.
-
-Jeśli posiadanie kilku kluczowyw opisów lub wymiarów w modelu ułatwi jego rysowanie, możesz je dodać na xref:glossary.adoc#niedrukowalna-warstwa[niedrukowalnej warstwie].
-
 Trudno jest podać procedurę rysowania krok po kroku, jako że każdy rysunek jest inny. Z tego powodu, rozdział ten podaje jedynie kluczowe wskazówki, które powinny uczynić rysowanie łatwiejszym.
 
 === Przejdź do "przestrzeni modelu":
+
+Domyślnie jesteś w przestrzeni modelu (widok z czarnym tłem), ale gdy potrzebujesz do niego wrócić (np. z podglądu wydruku):
 
 `LMBx2` _Block List > Model_:
 
@@ -145,7 +154,7 @@ Trudno jest podać procedurę rysowania krok po kroku, jako że każdy rysunek j
 image::img/model_space.png[]
 
 === Ograniczaj ręczne kalkulacje do absolutnego minimum
-Pozwól QCAD'owi robić jak najwięcej pracy za Ciebie zawsze szukając sposobów na to aby:
+Pozwól QCAD'owi robić jak najwięcej pracy za Ciebie, zawsze szukając sposobów, aby:
 
 * wykonywać jak najmniej ręcznych kalkulacji,
 * wpisywać jak najmniej parametrów z klawiatury.
@@ -153,6 +162,20 @@ Pozwól QCAD'owi robić jak najwięcej pracy za Ciebie zawsze szukając sposobó
 Oszczędzi Ci to dużo czasu i wysiłku. Te "sposoby" sprowadzają się do takiego rysowania, aby móc maksymalnie polegać na przyciąganiu do punktów takich jak końce linii, czy punkty przecięcia, zamiast wprowadzania współrzędnych ręcznie.
 
 // todo specific examples, tips
+
+[#model-rozmieszczenie-detali]
+=== Rozmieść detale
+Model to nie prezentacja. Precyzyjne rozmieszczanie elementów tak, aby wyglądały dobrze na wydruku, xref:#prezentacja[będziemy robić później]. To powiedziawszy, rysując model, dobrze jest utrzymywać niejaki porządek i zastosować minimum planowania, aby się w rozbudowanym modelu połapać.
+
+=== Pomocnicze wymiary, opisy i numeracja w modelu
+Wymiary i opisy przeznaczone _dla czytelnika rysunków_ xref:#prezentacja[będziemy umieszczać na papierze].
+
+To powiedziawszy, nieco komentarza, numeracja elementów lub kilka kluczowych wymiarów umieszczona w modelu może być użyteczna dla nas, jako rysowników, pomagając nam lepiej się orientować, zwłaszcza jeśli model jest skomplikowany.
+
+Jeśli chcesz takie pomocnicze elementy umieścić w modelu, pamiętaj, aby:
+
+* umieszczać je na xref:#niedrukowalna-warstwa[niedrukowalnej warstwie],
+* nadawać im duży rozmiar czcionek (w modelu używamy skali 1:1, na papierze zwykle jest to skala znacznie większa, więc czcionki w rozmiarze dobrze wyglądającym na papierze są nieczyteline małe w modelu).
 
 [#prezentacja]
 == Przedstaw model na wydruku
@@ -163,6 +186,9 @@ _Block > Add Layout Block_:
 
 * Nazwij nową stronę w polu _Layout name_, np. "02 - rygiel 1", albo "03 - słup 2".
 * Zignoruj pole _Order_.
+
+[#przestrzen-papieru-nowa-strona]
+=== Wejdź w "przestrzeń papieru" nowej strony
 
 Upewnij się, że nowo utworzona strona jest aktywna w panelu _Block List_ (ma wyświetloną ikonę ołówka). Jeśli nie jest, kliknij jej nazwę dwa razy:
 
@@ -183,67 +209,187 @@ Kliknij ikonę _Auto Center_ na pasku narzędzi:
 .Auto Center
 image::img/presentation_auto_center.png[]
 
+[#warstwa-widoki-stworz]
 === Dodaj warstwę dla widoków
+
+Jeśli jeszcze nie masz warstwy "widoki":
+
 _Layer > Add Layer_:
 
 * Nazwij warstwę "widoki" w polu _Layer name_.
 * Wybierz kolor, np. niebieski (_Blue_) w polu _Color_.
 * Ustaw typ lini na kreskowany (_ISO dash_) w polu _Linetype_.
-* Odznacz opcję _Plottable_.
+* Odznacz opcję _Plottable_ (to spowoduje że obrysy widoków nie będą widoczne na wydruku).
 
 [#nowy-widok]
 === Dodaj widok elementu
 
-==== Wejdź na warstwę "widoki"
+Niektóre elementy są zorientowane w modelu w pionie/poziomie. Takie elementy zwykle będziemy przedstawiać na papierze w tej samej orientacji, w jakiej znajdują się w modelu. Przykładem są słupy, poziome belki lub blachy czołowe:
+
+.Blacha czołowa w modelu
+image::img/blacha_czolowa_model.png[float="left"]
+
+.Blacha czołowa na papierze
+image::img/blacha_czolowa_papier.png[]
+
+Inne elementy są w modelu zorientowane "po skosie", jednak na papierze chcielibyśmy je obrócić dla lepszego wykorzystania miejsca na papierze, czytelności, i większej łatwości wymiarowania. Przykładem takich elementów są ukośne rygle, krokwie i narożne blachy wzmacniające węzeł słup-rygiel:
+
+.Blacha narożna w modelu - po skosie
+image::img/blacha_narozna_model_skos.png[float="left"]
+
+.Blacha narożna na papierze - w poziomie
+image::img/blacha_narozna_papier_poziom.png[]
+
+Zacznijmy od elementów zorientowanych w pionie. W późniejszej sekcji xref:nowy-widok-skos[], zobaczymy jak radzić sobie z elementami, które są zorientowane "po skosie" i wymagają obrotu na papierze.
+
+[#nowy-widok-poziom]
+==== Widok elementów zorientowanych w pionie/poziomie
+
+===== Wejdź na warstwę "widoki"
 // todo common operations
-Upewnij się, że warstwa "widoki" jest aktywna w _Layer list_. Jeśli nie jest to `LMB` jej nazwę w panelu _Layer list_.
 
-==== Zacznij dodawać widok
-Dodaj widok elementu, wybierając _Draw > Viewport > Add vieport_.
+Upewnij się, że warstwa "widoki" jest aktywna w _Layer list_. Jeśli nie jest, to `LMB` jej nazwę w panelu _Layer list_.
 
-To chwilowo wyłącza podgląd wydruku (z białym tłem) i przenosi Cię do podglądu modelu (z czarnym tłem).
+Warstwa ta została stworzona w kroku xref:warstwa-widoki-stworz[].
 
-==== Nadaj widokowi skalę
-Wprowadź skalę w jakiej chcesz przedstawić element na stronie:
+===== Wejdź w przestrzeń papieru
+
+Upewnij się, że jesteś w "przestrzeni papieru" (_paper space_).
+
+Sekcja xref:przestrzen-papieru-nowa-strona[] opisuje jak przejść do tej przestrzeni.
+
+[#nowy-widok-poziom-zacznij-dodawac]
+===== Zacznij dodawać widok
+
+Dodaj widok elementu, wybierając _Draw > Viewport > Add viewport_.
+
+To chwilowo wyłącza podgląd wydruku (ten z białym tłem) i przenosi Cię do podglądu modelu (tego z czarnym tłem).
+
+[#nowy-widok-nadaj-skale]
+===== Nadaj widokowi skalę
+
+Wprowadź skalę w jakiej chcesz przedstawić element na stronie w polu _Scale_. Możesz stosować notację 1:20, 1/20 lub 0.05.
 
 .Ustawianie skali widoku w momencie jego tworzenia
 image::img/presentation_viewport_set_scale.png[]
 
-==== Zaznacz obrys widoku
-Program czeka teraz aż zaznaczysz prostokątny obszar zawierający element, który chcesz przedstawić na stronie. Pamiętaj, że możesz przesuwać, pomniejszać i powiększać podgląd modelu, żeby wygodniej i bardziej precyzyjnie zaznaczyć potrzebny obszar.
+[#nowy-widok-obrys-poziom]
+===== Zaznacz obrys widoku
 
-Zaznacz obrys nieco większy niż sam element, klikając w czarne tło:
+Program czeka teraz, aż zaznaczysz prostokątny obszar obrysowujący element, który chcesz przedstawić na stronie.
+
+[NOTE]
+Pamiętaj, że możesz przesuwać, pomniejszać i powiększać podgląd modelu, żeby wygodniej i bardziej precyzyjnie zaznaczyć potrzebny obszar.
+
+Zacznij obrysowywać element konturem widoku, nieco większym niż sam element, klikając w czarne tło:
 
 * `LMB` w jednym rogu obrysu,
 * `LMB` w rogu po przekątnej.
 
-To zabiera Cię z powrotem do podglądu wydruku (z białym tłem).
+.Obrys blachy czołowej
+image:img/blacha_czolowa_model_obrys.png[]
 
-==== Umieść widok na stronie
-Program czeka na wskazanie pozycji gdzie chcesz umieścić widok elementu. Poruszaj kursorem myszy i zauważ, że widok elementu jest do niego "przyklejony" i rusza się razem z nim.
+Drugi klik zabiera Cię z powrotem do podglądu wydruku (tego z białym tłem).
+
+===== Umieść widok na stronie
+
+Program czeka teraz na wskazanie pozycji gdzie chcesz umieścić widok elementu. Poruszaj kursorem myszy i zauważ, że widok elementu jest do niego "przyklejony" i rusza się razem z kursorem.
 
 * Przesuń kursor myszy na miejsce gdzie widok ma być umieszczony.
 * `LMB`, żeby "zakotwiczyć" (wkleić) widok na stronie.
 
-==== Skoryguj pozycję widoku (jeśli trzeba)
+===== Skoryguj pozycję widoku
+
 Jeśli potrzebujesz przesunąć widok w inne miejsce na stronie:
 
 * Zaznacz widok przez kliknięcie elementu przedstawionego w widoku.
 * To spowoduje wyświetlenie granatowych "uchwytów" - kwadratów w narożnikach i dwóch "kropek" wewnątrz obrysu.
 * "Złap" za środkową kropkę (wciśnij i przytrzymaj `LMB`) i pociągnij ją tam gdzie chcesz umieścić widok.
-* Puść `LMB`, żeby zakotwiczyć widok.
+* Puść `LMB`, żeby zakotwiczyć widok ("upuścić" go z powrotem na papier).
 
-==== Skoryguj skalę widoku
-Usuń widok i stwórz go od nowa z nową skalą (jak opisane w sekcji xref:#nowy-widok[Dodaj widok elementu]).
+===== Skoryguj skalę widoku
+
+Jeśli potrzebujesz skorygować skalę widoku, najłatwiej jest to zrobić usuwając go i tworząc go od nowa z właściwą skalą (jak opisano w sekcji xref:#nowy-widok[]).
 
 Usunięcie widoku:
 
+* Upewnij się, że jesteś w przestrzeni papieru.
 * Zaznacz widok pojedynczym kliknięciem `LMB`.
 * Wciśnij klawisz _Delete_ na klawiaturze.
 
+[#nowy-widok-skos]
+==== Widok elementów zorientowanych po skosie
+
+Jak wspomniano wcześniej w xref:#nowy-widok[], widoki elementów zorientowanych w modelu "po skosie" wymagają obrócenia. Zwykle chcemy je obrócić tak, aby najdłuższa krawędź elementu znalazła się w poziomie lub pionie.
+
+[NOTE]
+--
+Zwróć uwagę, że obracamy tu _widok_ elementu na papierze. Orientacja elementu w modelu pozostaje bez zmian.
+--
+
+Procedura dodawania widoków elementów zorientowanych po skosie jest podobna do tej dla widoków, które nie wymagają obracania, różniąc się od niej małymi tylko zmianami.
+
+Dlatego, zanim przystąpisz do umieszczania widoków elementów zorientowanych "skośnie", upewnij się, że masz dobrze opanowaną procedurę umieszczania widoków elementów zorientowanych w pionie/poziomie, jak opisano w xref:#nowy-widok[].
+
+[#kat-obrotu-widoku-znajdz]
+===== Znajdź kąt obrotu widoku
+
+Zanim wklejanemu widokowi będziemy mogli zadać kąt obrotu, musimy ten kąt najpierw znaleźć. Kąt ten to kąt ostry między krawędzią, którą chcemy umieścić w poziomie, a poziomem, _w modelu_.
+
+Żeby zmierzyć ten kąt:
+
+* Wejdź w przestrzeń modelu: `LMBx2` _Block List > Model (Model_Space)_
+* Narysuj poziomą, pomocniczą, tymczasową linię, przecinającą się z najdłuższą krawędzią elementu:
+
+image::img/blacha_narozna_model_skos_guide_line.png[]
+
+* Wybierz narzędzie _Info > Angle_.
+* Kliknij nowo narysowaną linię pomocniczą w pobliżu punktu przecięcia (1).
+* Zbliż kursor myszy do krawędzi elementu od "wnętrza" kąta ostrego (2), tak aby pokazał się łuk kąta _wewnątrz kąta ostrego_ (3), i kliknij, aby ten łuk utrwalić:
+
+image::img/blacha_narozna_model_skos_guide_line_info_angle_clicks.png[]
+
+* Miara kąta zostanie wyświetlona w oknie dialogowym z dużą precyzją (ta wyświetlona w modelu jest zwykle znacznie mniejsza). Zaznacz całą wartość numeryczną (tzn. bez symbolu stopni) i skopiuj ją do schowka (_Ctrl+C_):
+
+.Wartość zmierzonego kąta
+image::img/info_angle_dialogue.png[]
+
+===== Zacznij dodawać widok
+Zacznij dodawać widok jak opisano dla elementów poziomych w sekcji xref:nowy-widok-poziom-zacznij-dodawac[].
+
+Gdy przejdziesz krok xref:#nowy-widok-nadaj-skale[], wróć tutaj i kontynuuj od następnej sekcji.
+
+[#nowy-widok-nadaj-kat-obrotu]
+===== Nadaj widokowi kąt obrotu
+
+W kroku xref:#nowy-widok-nadaj-skale[], obok pola _Scale_, mogłeś zauważyć pole _Rotation_.
+
+To drugie pole wyznacza kąt obrotu widoku. Kąt ten znaleźliśmy w kroku xref:kat-obrotu-widoku-znajdz[] i skopiowaliśmy do schowka.
+
+Wklej tę skopiowaną wartość kąta w polu _Rotation_:
+
+image::img/paste_viewport_enter_rotation.png[]
+
+[#nowy-widok-obrys-skos]
+===== Zaznacz obrys widoku
+
+Podobnie jak poprzednio, następny krok to obrysowanie widoku, i podobnie jak poprzednio, obrysujemy obszar nieco większy niż sam element.
+
+Podobnie jak opisano w xref:#nowy-widok-obrys-poziom[] dla elementów zorientowanych w poziomie, tutaj również musimy wyznaczyć dwa, przeciwległe rogi prostokąta obrysu.
+
+Tym razem, prostokąt obrysu wyświetlany w modelu będzie zorientowany po skosie, bo zmieniliśmy wartość kąta w polu _Rotation_. Weź to pod uwagę, wyznaczając narożniki (1) i (2):
+
+.Obrys widoku
+image::img/paste_viewport_outline_correct.png[]
+
+Krawędź obrysu musi być równoległa do tej krawędzi elementu, dla której zmierzyliśmy kąt obrotu. Jeśli nie jest ona równoległa, podaj wartość kąta obrotu jako ujemną w polu _Rotation_ (poprzedź ją znakiem minus).
+
+.Obrys widoku — nieprawidłowy
+image::img/paste_viewport_outline_incorrect.png[]
+
 === Zwymiaruj elementy
 
-==== Stwórz warstę dla wymiarów
+==== Stwórz warstwę dla wymiarów
 Zignoruj, jeśli warstwa "wymiary - papier" już istnieje.
 
 _Layer > Add Layer_:
@@ -274,5 +420,7 @@ image:img/tool_bar_dimensions_scale_auto.png[]
 ** `LMB` pierwszy punkt wymiaru,
 ** `LMB` drugi punkt wymiaru,
 ** `LMB` na papierze w jakimś dystansie od elementu, żeby "zakotwiczyć" linię wymiarową.
+
+// todo przesuń widok z wymiarami
 
 include::glossary.adoc[]
