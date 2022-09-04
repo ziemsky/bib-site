@@ -10,7 +10,7 @@ Ten przewodnik przedstawia podstawy QCAD'a. Wiele efektów w programie QCAD moż
 
 Przewodnik nie jest wyczerpującą encyklopedią programu, a raczej stara się przedstawić jeden, wyważony, łatwy w użyciu sposób produkji rysunków technicznych.
 
-Podane procedury skupiają się na użyciu myszy, ograniczając użycie klawiatury do koniecznego minimum. Powodem jest to aby uczynić naukę podstaw QCAD'a jak najłatwiejszą, kosztem szybkości rysowania.
+Podane procedury skupiają się na użyciu myszy, ograniczając użycie klawiatury do koniecznego minimum. Powodem jest to, aby uczynić naukę podstaw QCAD'a jak najłatwiejszą, kosztem szybkości rysowania.
 
 === Konwencje
 
@@ -195,7 +195,7 @@ Upewnij się, że nowo utworzona strona jest aktywna w panelu _Block List_ (ma w
 .Nowa strona jest aktywna
 image::img/presentation_current_page_selection.png[]
 
-To automatycznie włącza podgląd wydruku. W tej chwili, strona może jeszcze nie być widoczna na ekranie - naprawimy to za moment.
+To automatycznie włącza podgląd wydruku. W tej chwili strona może jeszcze nie być widoczna na ekranie - naprawimy to za moment.
 
 === Ustaw rozmiar i orientację strony
 _Edit > *Drawing preferences* > Printing > Page_:
@@ -204,10 +204,10 @@ _Edit > *Drawing preferences* > Printing > Page_:
 * Ustaw rozmiar papieru w _Paper > Paper size_.
 
 === Wycentruj stronę na ekranie
-Kliknij ikonę _Auto Center_ na pasku narzędzi:
+Kliknij ikonę _Auto zoom to page(s)_ na pasku narzędzi:
 
-.Auto Center
-image::img/presentation_auto_center.png[]
+.Auto zoom to page(s)
+image::img/presentation_auto_zoom_to_pages.png[]
 
 [#warstwa-widoki-stworz]
 === Dodaj warstwę dla widoków
