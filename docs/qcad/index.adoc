@@ -197,6 +197,7 @@ image::img/presentation_current_page_selection.png[]
 
 To automatycznie włącza podgląd wydruku. W tej chwili strona może jeszcze nie być widoczna na ekranie - naprawimy to za moment.
 
+[#ustaw-rozmiar-orientacje-strony]
 === Ustaw rozmiar i orientację strony
 _Edit > *Drawing preferences* > Printing > Page_:
 
@@ -209,6 +210,43 @@ Kliknij ikonę _Auto zoom to page(s)_ na pasku narzędzi:
 .Auto zoom to page(s)
 image::img/presentation_auto_zoom_to_pages.png[]
 
+[WARNING]
+Nie pomyl ikony, i nie kliknij _Auto center_ (image:img/auto_center.png[]) przez pomyłkę. To narzędzie automatycznie przesuwa elementy już umieszczone na stronie do jej centrum, zamiast przesuwać _podgląd_ samej strony, bez wpływu na jej zawartość.
+
+=== Dodaj ramkę
+
+Otwórz bibliotekę: zaznacz _View > Library Browser_.
+
+W prawym, górnym rogu okna pojawi się przeglądarka biblioteki (_Library Browser_). Tamże:
+
+* wybierz zakładkę _File system_,
+* w rozwijalnym menu pod zakładką wybierz _ramki_,
+* w panelu poniżej zaznacz _ramki_,
+* powiększ lewy dolny róg białej strony na ekranie,
+* w panelu poniżej `LMBx2` wybierz ramkę o rozmiarze i orientacji takich jakie nadałeś stronie (w kroku xref:ustaw-rozmiar-orientacje-strony[]),
+* wybierz _Snap > Grid_,
+* kliknij w rogu, w miejscu przecięcia się szarych, wąskich krawędzi białego obszaru (punkt przedstawiony czerwonym celownikiem na poniższej ilustracji),
+
+image::img/anchor_frame.png[]
+
+* wciśnij klawisz _Esc_, żeby odłożyć narzędzie,
+* pomniejsz/wycentruj widok, tak aby zobaczyć całą stronę (image:img/auto_zoom.png[]),
+* zaznacz ramkę (`LMB`),
+* wybierz _Block > Explode_.
+
+[NOTE]
+Wklejona ramka automatycznie dodaje nową warstwę o nazwie "_ramki_". Warstwy tej nie usuwaj, bo stracisz ramki z tego i pozostałych stron w bieżącym pliku rysunku.
+
+[NOTE]
+Ramka ta dodaje również blok o nazwie takiej jaką wybrałeś z biblioteki (np. _A2 poziom_). Ten blok można usunąć.
+
+=== Wypełnij tabliczkę
+
+Wklejona powyżej ramka zawiera tabliczkę. Aby wypełnić ją właściwą treścią `LMBx2` teksty w indywidualnych polach aby je zmienić. Niektóre z pól zawierają tylko podkreślenia; w tym przypadku `LMBx2` te podkreślenia i zastąp je właściwym tekstem.
+
+[NOTE]
+Jeśli nowy tekst wykracza poza objętość pola, zmniejsz go w oknie dialogowym w polu _Height_ w lewym górnym rogu. Wartość tego pola wyraża się w jednostkach rysunku.
+
 [#warstwa-widoki-stworz]
 === Dodaj warstwę dla widoków
 
@@ -219,7 +257,7 @@ _Layer > Add Layer_:
 * Nazwij warstwę "widoki" w polu _Layer name_.
 * Wybierz kolor, np. niebieski (_Blue_) w polu _Color_.
 * Ustaw typ lini na kreskowany (_ISO dash_) w polu _Linetype_.
-* Odznacz opcję _Plottable_ (to spowoduje że obrysy widoków nie będą widoczne na wydruku).
+* Odznacz opcję _Plottable_ (to spowoduje, że obrysy widoków nie będą widoczne na wydruku).
 
 [#nowy-widok]
 === Dodaj widok elementu
