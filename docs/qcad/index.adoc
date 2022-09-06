@@ -125,10 +125,20 @@ To spowoduje wyświetlania wartości "tymczasowych" pomiarów (tzn. wykonanych n
 [#nowy-rysunek]
 == Stwórz nowy rysunek
 
+=== Ściągnij bazowy plik
 Ściągnij jeden z następujących plików na swój komputer, zapisz go w katalogu Twojego projektu i zmień jego nazwę:
 
 * xref:drawings/rysunek qcad - wymiary w milimetrach.dxf[rysunek qcad - wymiary w milimetrach.dxf] - dla rysunków stali
 * xref:drawings/rysunek qcad - wymiary w centymetrach.dxf[rysunek qcad - wymiary w centymetrach.dxf] - dla rysunków obiektów murowanych i drewnianych
+
+=== Warstwy
+Ściągnięte pliki zawierają kilka użytecznych, już skonfigurowanych warstw. Uzyj ich dla uproszczenia rysowania:
+
+* `kontury` - tu rysuj swój model - elementy stalowe, więźby, mury, etc.
+* `widoki (papier)` - tu umieszczaj widoki elementów dla wydruku (jak opisane w xref:#nowy-widok[])
+* `wymiary opisy (model)` - tu umieszczaj pomocnicze opisy i wymiary, które powinny być widoczne tylko w modelu, a które nie powinny być drukowane na papierze.
+* `wymiary opisy (papier)` - tu umieszczaj opisy i wymiary, które powinny być drukowane na papierze.
+
 
 [#model]
 == Narysuj model
@@ -170,7 +180,7 @@ To powiedziawszy, nieco komentarza, numeracja elementów lub kilka kluczowych wy
 
 Jeśli chcesz takie pomocnicze elementy umieścić w modelu, pamiętaj, aby:
 
-* umieszczać je na xref:#niedrukowalna-warstwa[niedrukowalnej warstwie],
+* umieszczać je na xref:#niedrukowalna-warstwa[niedrukowalnej warstwie] `wymiary opisy (model)`.,
 * nadawać im duży rozmiar czcionek (w modelu używamy skali 1:1, na papierze zwykle jest to skala znacznie większa, więc czcionki w rozmiarze dobrze wyglądającym na papierze są nieczyteline małe w modelu).
 
 [#prezentacja]
@@ -271,7 +281,7 @@ Zacznijmy od elementów zorientowanych w pionie. W późniejszej sekcji xref:now
 [#nowy-widok-poziom]
 ==== Widok elementów zorientowanych w pionie/poziomie
 
-===== Wejdź na warstwę "widoki"
+===== Wejdź na warstwę "widoki (papier)"
 // todo common operations
 
 Upewnij się, że warstwa "widoki (papier)" jest aktywna w _Layer list_. Jeśli nie jest, to `LMB` jej nazwę w panelu _Layer list_.
@@ -413,27 +423,10 @@ image::img/paste_viewport_outline_incorrect.png[]
 
 === Zwymiaruj elementy
 
-==== Stwórz warstwę dla wymiarów
-Zignoruj, jeśli warstwa "wymiary - papier" już istnieje.
 
-_Layer > Add Layer_:
-
-* _Layer name_ (nazwa warstwy): "wymiary - papier"
-* _Color_ (kolor linii): _Yellow_
-* _Lineweight_ (grubość linii): _0.18mm (ISO)_
-* _Linetype_ (typ linii): _Continuous_ (ciągła)
-* _Plottable_ (drukowalna): tak, zaznacz
-* _Snappable_ (przyciągalna): tak, zaznacz
-
-.Dlaczego taka nazwa?
-[%collapsible]
-====
-W niektórych przypadkach może być użyteczne stworzenie niedrukowalnej warstwy z "roboczymi" wymiarami przydatnymi do wyświetlania w modelu. Taka warstwa zostałaby nazwana "wymiary - model", więc w bieżącej dodajemy kwalifikator "- papier" aby odróżnić te dwie warstwy.
-====
-
-==== Wejdź na warstwę "wymiary - papier"
+==== Wejdź na warstwę "wymiary opisy (papier)"
 // todo common operations
-Upewnij się, że warstwa "wymiary - papier" jest aktywna w _Layer list_. Jeśli nie jest to `LMB` jej nazwę w panelu _Layer list_.
+Upewnij się, że warstwa "wymiary opisy (papier)" jest aktywna w _Layer list_. Jeśli nie jest to `LMB` jej nazwę w panelu _Layer list_.
 
 ==== Nadaj wymiar elementowi
 
