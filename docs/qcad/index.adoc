@@ -52,7 +52,6 @@ Przed przystąpieniem do rysowania po raz pierwszy, upewnij się, że program je
 Process tworzenia nowego rysunku sprowadza się do następujących faz:
 
 * xref:#nowy-rysunek[]
-* xref:#parametry-rysunku[]
 * xref:#model[]
 * xref:#prezentacja[]
 
@@ -125,17 +124,11 @@ To spowoduje wyświetlania wartości "tymczasowych" pomiarów (tzn. wykonanych n
 
 [#nowy-rysunek]
 == Stwórz nowy rysunek
-_File > New_.
 
-[#parametry-rysunku]
-== Ustaw parametry rysunku
+Ściągnij jeden z następujących plików na swój komputer, zapisz go w katalogu Twojego projektu i zmień jego nazwę:
 
-=== Wybierz jednostki
-_Edit > *Drawing preferences* > General > Drawing Unit_:
-
-_Drawing unit_:: Jednostki używane w modelu i w wymiarach na wydruku. Dla rysunków stali lub drobnych, precyzyjnych przedmiotów wybierz milimetry, dla rysunków obiektów murowanych lub drewnianych wybierz centymetry.
-_Paper unit_:: Jednostki używane do określania rozmiaru papieru oraz wymiarów tabliczek i ramek. Zawsze ustaw milimetry.
-_Measurement system_:: Jednostki określające grubości linii i odstępy kreskowania  , _Metric_ (metryczny, czyli SI: centymetry, milimetry) lub _Imperial_ (stopy, cale).
+* xref:drawings/rysunek qcad - wymiary w milimetrach.dxf[rysunek qcad - wymiary w milimetrach.dxf] - dla rysunków stali
+* xref:drawings/rysunek qcad - wymiary w centymetrach.dxf[rysunek qcad - wymiary w centymetrach.dxf] - dla rysunków obiektów murowanych i drewnianych
 
 [#model]
 == Narysuj model
@@ -143,6 +136,9 @@ _Measurement system_:: Jednostki określające grubości linii i odstępy kresko
 Używając narzędzi rysowania, narysuj obiekty, które są tematem twojego rysunku. Pamiętaj, że w modelu nie przejmujemy się skalą, bo w nim wszystko rysujemy w skali 1:1.
 
 Trudno jest podać procedurę rysowania krok po kroku, jako że każdy rysunek jest inny. Z tego powodu, rozdział ten podaje jedynie kluczowe wskazówki, które powinny uczynić rysowanie łatwiejszym.
+
+[NOTE]
+W zależności który z "bazowych" plików ściągnąłeś w poprzednim kroku, model będziesz rysować w jednostkach takich jak odzwierciedlone w nazwie pliku (milimetry dla stali, centymetry dla obiektów drewnianych i stalowych).
 
 === Przejdź do "przestrzeni modelu":
 
@@ -197,6 +193,10 @@ image::img/presentation_current_page_selection.png[]
 
 To automatycznie włącza podgląd wydruku. W tej chwili strona może jeszcze nie być widoczna na ekranie - naprawimy to za moment.
 
+=== Wyłącz kolory
+
+image::img/print_preview_black_and_white.png[]
+
 [#ustaw-rozmiar-orientacje-strony]
 === Ustaw rozmiar i orientację strony
 _Edit > *Drawing preferences* > Printing > Page_:
@@ -235,7 +235,7 @@ image::img/anchor_frame.png[]
 * wybierz _Block > Explode_.
 
 [NOTE]
-Wklejona ramka automatycznie dodaje nową warstwę o nazwie "_ramki_". Warstwy tej nie usuwaj, bo stracisz ramki z tego i pozostałych stron w bieżącym pliku rysunku.
+Wklejona ramka automatycznie dodaje nową warstwę o nazwie "_ramka tabliczka (papier)_". Warstwy tej nie usuwaj, bo stracisz ramki z tego i pozostałych stron w bieżącym pliku rysunku.
 
 [NOTE]
 Ramka ta dodaje również blok o nazwie takiej jaką wybrałeś z biblioteki (np. _A2 poziom_). Ten blok można usunąć.
@@ -246,18 +246,6 @@ Wklejona powyżej ramka zawiera tabliczkę. Aby wypełnić ją właściwą treś
 
 [NOTE]
 Jeśli nowy tekst wykracza poza objętość pola, zmniejsz go w oknie dialogowym w polu _Height_ w lewym górnym rogu. Wartość tego pola wyraża się w jednostkach rysunku.
-
-[#warstwa-widoki-stworz]
-=== Dodaj warstwę dla widoków
-
-Jeśli jeszcze nie masz warstwy "widoki":
-
-_Layer > Add Layer_:
-
-* Nazwij warstwę "widoki" w polu _Layer name_.
-* Wybierz kolor, np. niebieski (_Blue_) w polu _Color_.
-* Ustaw typ lini na kreskowany (_ISO dash_) w polu _Linetype_.
-* Odznacz opcję _Plottable_ (to spowoduje, że obrysy widoków nie będą widoczne na wydruku).
 
 [#nowy-widok]
 === Dodaj widok elementu
@@ -286,9 +274,7 @@ Zacznijmy od elementów zorientowanych w pionie. W późniejszej sekcji xref:now
 ===== Wejdź na warstwę "widoki"
 // todo common operations
 
-Upewnij się, że warstwa "widoki" jest aktywna w _Layer list_. Jeśli nie jest, to `LMB` jej nazwę w panelu _Layer list_.
-
-Warstwa ta została stworzona w kroku xref:warstwa-widoki-stworz[].
+Upewnij się, że warstwa "widoki (papier)" jest aktywna w _Layer list_. Jeśli nie jest, to `LMB` jej nazwę w panelu _Layer list_.
 
 ===== Wejdź w przestrzeń papieru
 
