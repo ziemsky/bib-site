@@ -135,7 +135,7 @@ To spowoduje wyświetlania wartości "tymczasowych" pomiarów (tzn. wykonanych n
 Ściągnięte pliki zawierają kilka użytecznych, już skonfigurowanych warstw. Uzyj ich dla uproszczenia rysowania:
 
 * `konstrukcja` - tu rysuj swój model - elementy stalowe, więźby, mury, etc.
-* `widoki (papier)` - tu umieszczaj widoki elementów dla wydruku (jak opisane w xref:#nowy-widok[])
+* `widoki` - tu umieszczaj widoki elementów dla wydruku (jak opisane w xref:#nowy-widok[])
 * `wymiary opisy (model)` - tu umieszczaj pomocnicze opisy i wymiary, które powinny być widoczne tylko w modelu, a które nie powinny być drukowane na papierze. Innymi słowy, są to elementy, które służą Tobie, jako rysownikowi, ale które nie powinny być uwidocznione czytelnikowi rysunku.
 * `wymiary opisy (papier)` - tu umieszczaj opisy i wymiary, które powinny być drukowane na papierze.
 
@@ -244,10 +244,10 @@ image::img/anchor_frame.png[]
 * wybierz _Block > Explode_.
 
 [NOTE]
-Wklejona ramka automatycznie dodaje nową warstwę o nazwie "_ramka tabliczka (papier)_". Warstwy tej nie usuwaj, bo stracisz ramki z tego i pozostałych stron w bieżącym pliku rysunku.
+Wklejona ramka automatycznie dodaje nową warstwę o nazwie "_ramka tabliczka_". Warstwy tej nie usuwaj, bo stracisz ramki z tego i pozostałych stron w bieżącym pliku rysunku.
 
 [NOTE]
-Ramka ta dodaje również blok o nazwie takiej jaką wybrałeś z biblioteki (np. _A2 poziom_). Ten blok można usunąć.
+Ramka ta dodaje również blok o nazwie takiej jaką wybrałeś z biblioteki (np. _A2 poziom_). Ten blok można usunąć, ale tylko jeśli wykonałeś _Block > Explode_ na ramce, jak opisano powyżej.
 
 === Wypełnij tabliczkę
 
@@ -280,10 +280,10 @@ Zacznijmy od elementów zorientowanych w pionie. W późniejszej sekcji xref:now
 [#nowy-widok-poziom]
 ==== Widok elementów zorientowanych w pionie/poziomie
 
-===== Wejdź na warstwę "widoki (papier)"
+===== Wejdź na warstwę "widoki"
 // todo common operations
 
-Upewnij się, że warstwa "widoki (papier)" jest aktywna w _Layer list_. Jeśli nie jest, to `LMB` jej nazwę w panelu _Layer list_.
+Upewnij się, że warstwa "widoki" jest aktywna w _Layer list_. Jeśli nie jest, to `LMB` jej nazwę w panelu _Layer list_.
 
 ===== Wejdź w przestrzeń papieru
 
