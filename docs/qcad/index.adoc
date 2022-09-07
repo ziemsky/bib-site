@@ -122,6 +122,34 @@ Zaznacz: _Edit > Application Preferences > Widgets > Command Line > Show informa
 
 To spowoduje wyświetlania wartości "tymczasowych" pomiarów (tzn. wykonanych narzędziami z menu _Info_) w oknach dialogowych, zamiast w linii komend (którą wyłączyłeś w poprzednim kroku).
 
+=== Ściągnij pliki ramek
+
+Na dysku Twojgo komputera stwórz katalog "_qcad biblioteka_" a w nim katalog "_ramki_" (np. w katalogu "_Dokumenty_").
+
+Ściągnij następujące pliki, jeden po drugim, do tego nowo utworzonego katalogu "_ramki_":
+
+* xref:drawings/ramki/A0 pion.dxf[A0 pion.dxf]
+* xref:drawings/ramki/A0 poziom.dxf[A0 poziom.dxf]
+* xref:drawings/ramki/A1 pion.dxf[A1 pion.dxf]
+* xref:drawings/ramki/A1 poziom.dxf[A1 poziom.dxf]
+* xref:drawings/ramki/A2 pion.dxf[A2 pion.dxf]
+* xref:drawings/ramki/A2 poziom.dxf[A2 poziom.dxf]
+* xref:drawings/ramki/A3 pion.dxf[A3 pion.dxf]
+* xref:drawings/ramki/A3 poziom.dxf[A3 poziom.dxf]
+* xref:drawings/ramki/A4 pion.dxf[A4 pion.dxf]
+* xref:drawings/ramki/A4 poziom.dxf[A4 poziom.dxf]
+* xref:drawings/ramki/A4 poziom obrocona.dxf[A4 poziom obrocona.dxf]
+* xref:drawings/ramki/tabliczka.dxf[tabliczka.dxf]
+
+Dodaj je do biblioteki QCAD'a:
+
+* Otwórz _Edit > Application Preferences > Widgets > Library Browser > Library Sources_
+* W panelu _Library Sources_ kliknij _Add_
+* W oknie dialogowym, które się pojawi, znajdź i wejdź do katalogu "_ramki_" utworzonego powyżej.
+* Kliknij _Choose_ aby zatwierdzić wybór.
+* Kliknij _OK_ aby zatwierdzić zmiany ustawień.
+* Zamknij i otwórz QCAD'a.
+
 [#nowy-rysunek]
 == Stwórz nowy rysunek
 
