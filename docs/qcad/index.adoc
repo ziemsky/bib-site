@@ -30,7 +30,7 @@ Ta konwencja jest używana gdzie jest to tylko możliwe. Tylko w miejscach gdzie
 
 Pierwszy człon ścieżki może wskazywać:
 
-* jedno z "menów" wymienionych na liście na górze okna (np. "_Edit_" na ilustracji powyżej),
+* jedno z "menu" wymienionych na liście na górze okna (np. "_Edit_" na ilustracji powyżej),
 * albo jeden z "kluczowych paneli" po prawej stronie ekranu (np. "_Block List_" na poniższej ilustracji):
 
 image::img/key_panels_all_overlapping.png[align=center]
