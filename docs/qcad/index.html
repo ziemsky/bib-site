@@ -463,13 +463,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel3">
 <li><a href="#_wyłącz_wyświetlanie_siatki">2.2.1. Wyłącz wyświetlanie siatki</a></li>
 <li><a href="#_wyłącz_automatyczne_przyciąganie_do_punktów_siatki">2.2.2. Wyłącz automatyczne przyciąganie do punktów siatki</a></li>
-<li><a href="#_ustaw_kolor_wydruku">2.2.3. Ustaw kolor wydruku</a></li>
-<li><a href="#_wyłącz_wyświetlanie_niedrukowalnych_warstw_w_podglądzie_wydruku">2.2.4. Wyłącz wyświetlanie "niedrukowalnych" warstw w podglądzie wydruku</a></li>
 </ul>
 </li>
-<li><a href="#_wyłącz_linię_komend">2.3. Wyłącz linię komend</a></li>
-<li><a href="#_włącz_wyświetlanie_pomiarów_w_oknie_dialogu">2.4. Włącz wyświetlanie pomiarów w oknie dialogu</a></li>
-<li><a href="#_ściągnij_pliki_ramek">2.5. Ściągnij pliki ramek</a></li>
+<li><a href="#_ustaw_kolor_wydruku">2.3. Ustaw kolor wydruku</a></li>
+<li><a href="#_wyłącz_wyświetlanie_niedrukowalnych_warstw_w_podglądzie_wydruku">2.4. Wyłącz wyświetlanie "niedrukowalnych" warstw w podglądzie wydruku</a></li>
+<li><a href="#_wyłącz_linię_komend">2.5. Wyłącz linię komend</a></li>
+<li><a href="#_włącz_wyświetlanie_pomiarów_w_oknie_dialogu">2.6. Włącz wyświetlanie pomiarów w oknie dialogu</a></li>
+<li><a href="#_ściągnij_pliki_ramek">2.7. Ściągnij pliki ramek</a></li>
 </ul>
 </li>
 <li><a href="#nowy-rysunek">3. Stwórz nowy rysunek</a>
@@ -480,7 +480,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#model">4. Narysuj model</a>
 <ul class="sectlevel2">
-<li><a href="#_przejdź_do_przestrzeni_modelu">4.1. Przejdź do "przestrzeni modelu":</a></li>
+<li><a href="#_przejdź_do_przestrzeni_modelu">4.1. Przejdź do "przestrzeni modelu"</a></li>
 <li><a href="#_ograniczaj_ręczne_kalkulacje_do_absolutnego_minimum">4.2. Ograniczaj ręczne kalkulacje do absolutnego minimum</a></li>
 <li><a href="#model-rozmieszczenie-detali">4.3. Rozmieść detale</a></li>
 <li><a href="#_pomocnicze_wymiary_opisy_i_numeracja_w_modelu">4.4. Pomocnicze wymiary, opisy i numeracja w modelu</a></li>
@@ -554,12 +554,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p>Dotarcie do właściwego narzędzia, opcji lub komendy zwykle wymaga kilku kroków, o których sekwencji można myśleć jako o "ścieżce dostępu". Do reprezentacji tych ścieżek ten przewodnik używa konwencji zilustrowanej następującym przykładem:</p>
 </div>
-<div class="exampleblock">
-<div class="content">
 <div class="paragraph">
-<p><em>Edit &gt; <strong>Drawing preferences</strong> &gt; General &gt; Drawing Unit &gt; Measurement system</em></p>
-</div>
-</div>
+<p><code><em>Edit &gt; <strong>Drawing preferences</strong> &gt; General &gt; Drawing Unit &gt; Measurement system</em></code></p>
 </div>
 <div class="paragraph">
 <p>Niektóre z członów ścieżki mogą się odnosić do tekstowych menu, a inne do opcji lub pól w oknach dialogowych. Powyższa, przykładowa ścieżka pozwala na znalezienie pola do ustawienia systemu miar. Jest ona zilustrowana na zrzucie ekranu poniżej; zauważ jak segmenty ścieżki korespondują do elementów zaznaczonych na poniższej ilustracji:</p>
@@ -572,6 +568,24 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div class="paragraph">
 <p>Ta konwencja jest używana gdzie jest to tylko możliwe. Tylko w miejscach gdzie jest ona niewystarczająca przewodnik ucieka się do zrzutów ekranu.</p>
+</div>
+<div class="paragraph">
+<p>Pierwszy człon ścieżki może wskazywać:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>jedno z "menów" wymienionych na liście na górze okna (np. "<em>Edit</em>" na ilustracji powyżej),</p>
+</li>
+<li>
+<p>albo jeden z "kluczowych paneli" po prawej stronie ekranu (np. "<em>Block List</em>" na poniższej ilustracji):</p>
+</li>
+</ul>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="img/key_panels_all_overlapping.png" alt="key panels all overlapping">
+</div>
 </div>
 </div>
 <div class="sect3">
@@ -653,28 +667,52 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="ulist">
 <ul>
 <li>
-<p><em>View &gt; Block List</em></p>
+<p><code><em>View &gt; Block List</em></code></p>
 </li>
 <li>
-<p><em>View &gt; Layer List</em></p>
+<p><code><em>View &gt; Layer List</em></code></p>
 </li>
 <li>
-<p><em>View &gt; Property Editor</em></p>
+<p><code><em>View &gt; Property Editor</em></code></p>
+</li>
+<li>
+<p><code><em>View &gt; Library Browser</em></code></p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>Gdy te opcje są zaznaczone, korespondujące panele powinny być widoczne po prawej stronie ekranu, wyglądając podobnie jak na poniższych ilustracjach. Zauważ, że rozmieszczenie paneli i ich "zakładek" różni się między dwiema ilustracjami. Wynika to z tego, że to rozmieszczenie można zmieniać, tak aby dostęp do nich był najwygodniejszy:</p>
+<p>Gdy te opcje są zaznaczone, korespondujące panele powinny być widoczne po prawej stronie ekranu, wyglądając podobnie jak na poniższych ilustracjach.</p>
 </div>
-<div class="imageblock left">
+<div class="paragraph">
+<p>Zauważ, że rozmieszczenie paneli i ich "zakładek" różni się między dwiema ilustracjami. Wynika to z tego, że to rozmieszczenie można zmieniać, tak aby dostęp do nich był najwygodniejszy:</p>
+</div>
+<table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="img/key_panels_all_overlapping.png" alt="key panels all overlapping">
 </div>
-</div>
-<div class="imageblock">
+<div class="title">Figure 2. Wszystkie panele w tej samej sekcji</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="img/key_panels_property_editor_separate.png" alt="key panels property editor separate">
 </div>
+<div class="title">Figure 3. Panele rozdzielone w dwóch sekcjach</div>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Możesz zmieniać kolejność pionowych zakładek "łapiąc" i przesuwając je kursorem myszy.</p>
+</div>
+<div class="paragraph">
+<p>Pdobnie, łapiąc i przesuwając poziomo zorientowane tytuły paneli, możesz zmienić lokację tych paneli.</p>
 </div>
 </div>
 <div class="sect2">
@@ -696,7 +734,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect3">
 <h4 id="_wyłącz_wyświetlanie_siatki">2.2.1. Wyłącz wyświetlanie siatki</h4>
 <div class="paragraph">
-<p><em>Edit &gt; <strong>Application</strong> Preferences &gt; <strong>Defaults for New Drawings</strong> &gt; Grid</em>:</p>
+<p><code><em>Edit &gt; <strong>Application</strong> Preferences &gt; <strong>Defaults for New Drawings</strong> &gt; Grid</em></code>:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -706,72 +744,65 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </div>
 <div class="paragraph">
-<p>Wyłączenie siatki w tym miejscu spowoduje, że nie będzie ona widoczna w <em>nowo</em> utworzonych rysunkach. Jeśli masz już istniejący rysunek na ekranie, i chcesz wyłączyć siatkę w nim, powtórz powyższy krok w lokacji <em>Edit &gt; <strong>Drawing Preferences</strong> &gt; General &gt; Grid</em>.</p>
+<p>Wyłączenie siatki w tym miejscu spowoduje, że nie będzie ona widoczna w <em>nowo</em> utworzonych rysunkach. Jeśli masz już istniejący rysunek na ekranie, i chcesz wyłączyć siatkę w nim, powtórz powyższy krok w lokacji <code><em>Edit &gt; <strong>Drawing Preferences</strong> &gt; General &gt; Grid</em></code>.</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_wyłącz_automatyczne_przyciąganie_do_punktów_siatki">2.2.2. Wyłącz automatyczne przyciąganie do punktów siatki</h4>
 <div class="paragraph">
-<p><em>Edit &gt; Application Preferences &gt; Snap &gt; Auto snap</em>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Odznacz <em>Grid points</em>.</p>
-</li>
-</ul>
+<p>Odznacz: <code><em>Edit &gt; Application Preferences &gt; Snap &gt; Auto snap</em> &gt; <em>Grid points</em></code></p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_ustaw_kolor_wydruku">2.2.3. Ustaw kolor wydruku</h4>
+</div>
+<div class="sect2">
+<h3 id="_ustaw_kolor_wydruku">2.3. Ustaw kolor wydruku</h3>
 <div class="paragraph">
-<p><em>Edit &gt; Application Preferences &gt; Default for New Drawings &gt; Printing - Colors</em></p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Zaznacz <em>Black / white</em>.</p>
-</li>
-</ul>
+<p>Zaznacz: <code><em>Edit &gt; Application Preferences &gt; Default for New Drawings &gt; Printing - Colors</em> &gt; <em>Black / white</em></code></p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_wyłącz_wyświetlanie_niedrukowalnych_warstw_w_podglądzie_wydruku">2.2.4. Wyłącz wyświetlanie "niedrukowalnych" warstw w podglądzie wydruku</h4>
+<div class="sect2">
+<h3 id="_wyłącz_wyświetlanie_niedrukowalnych_warstw_w_podglądzie_wydruku">2.4. Wyłącz wyświetlanie "niedrukowalnych" warstw w podglądzie wydruku</h3>
 <div class="paragraph">
-<p><em>Edit &gt; Application Preferences &gt; File &gt; Print Preview</em>:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Zaznacz <em>Show only plottable layers</em> ("Pokazuj tylko drukowalne warstwy").</p>
-</li>
-</ul>
+<p>Zaznacz: <code><em>Edit &gt; Application Preferences &gt; File &gt; Print Preview</em> &gt; <em>Show only plottable layers</em></code></p>
 </div>
 <div class="paragraph">
 <p><a href="#niedrukowalna-warstwa">Co to jest drukowalna i niedrukowalna warstwa?</a></p>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_wyłącz_linię_komend">2.5. Wyłącz linię komend</h3>
+<div class="paragraph">
+<p>Odznacz: <code><em>View &gt; Command Line</em></code></p>
+</div>
+<details>
+<summary class="title">Dlaczego?</summary>
+<div class="content">
+<div class="paragraph">
+<p>Linia komend jest użyteczna jako mechanizm szybszego wydawania komend, ale wymaga częstszego użycia klawiatury. Jako że ten przewodnik ogranicza użycia klawiatury do absolutnego minimum, wyłącz linię komend dla zaoszczędzenia miejsca na ekranie i zredukowania "wizualnego hałasu".</p>
+</div>
+</div>
+</details>
 </div>
 <div class="sect2">
-<h3 id="_wyłącz_linię_komend">2.3. Wyłącz linię komend</h3>
+<h3 id="_włącz_wyświetlanie_pomiarów_w_oknie_dialogu">2.6. Włącz wyświetlanie pomiarów w oknie dialogu</h3>
 <div class="paragraph">
-<p>Linia komend jest użyteczna jako mechanizm szybszego wydawania komend, ale wymaga częstszego użycia klawiatury. Jako że ten przewodnik ogranicza użycia klawiatury do absolutnego minimum, wyłącz linię komend dla zaoszczędzenia miejsca na ekranie i zredukowania "wizualnego hałasu":</p>
+<p>Zaznacz: <code><em>Edit &gt; Application Preferences &gt; Widgets &gt; Command Line &gt; Show information as dialog</em></code></p>
 </div>
-<div class="paragraph">
-<p>Odznacz: <em>View &gt; Command Line</em></p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+To spowoduje wyświetlania wartości "tymczasowych" pomiarów (tzn. wykonanych narzędziami z menu <em>Info</em>) w oknach dialogowych, zamiast w linii komend (którą wyłączyłeś w poprzednim kroku).
+</td>
+</tr>
+</table>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_włącz_wyświetlanie_pomiarów_w_oknie_dialogu">2.4. Włącz wyświetlanie pomiarów w oknie dialogu</h3>
-<div class="paragraph">
-<p>Zaznacz: <em>Edit &gt; Application Preferences &gt; Widgets &gt; Command Line &gt; Show information as dialog</em></p>
-</div>
-<div class="paragraph">
-<p>To spowoduje wyświetlania wartości "tymczasowych" pomiarów (tzn. wykonanych narzędziami z menu <em>Info</em>) w oknach dialogowych, zamiast w linii komend (którą wyłączyłeś w poprzednim kroku).</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_ściągnij_pliki_ramek">2.5. Ściągnij pliki ramek</h3>
+<h3 id="_ściągnij_pliki_ramek">2.7. Ściągnij pliki ramek</h3>
 <div class="paragraph">
 <p>Na dysku Twojgo komputera stwórz katalog "<em>qcad biblioteka</em>" a w nim katalog "<em>ramki</em>" (np. w katalogu "<em>Dokumenty</em>").</p>
 </div>
@@ -824,7 +855,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="ulist">
 <ul>
 <li>
-<p>Otwórz <em>Edit &gt; Application Preferences &gt; Widgets &gt; Library Browser &gt; Library Sources</em></p>
+<p>Otwórz: <code><em>Edit &gt; <strong>Application Preferences</strong> &gt; Widgets &gt; Library Browser &gt; Library Sources</em></code></p>
 </li>
 <li>
 <p>W panelu <em>Library Sources</em> kliknij <em>Add</em></p>
@@ -911,18 +942,18 @@ W zależności który z "bazowych" plików ściągnąłeś w poprzednim kroku, m
 </table>
 </div>
 <div class="sect2">
-<h3 id="_przejdź_do_przestrzeni_modelu">4.1. Przejdź do "przestrzeni modelu":</h3>
+<h3 id="_przejdź_do_przestrzeni_modelu">4.1. Przejdź do "przestrzeni modelu"</h3>
 <div class="paragraph">
-<p>Domyślnie jesteś w przestrzeni modelu (widok z czarnym tłem), ale gdy potrzebujesz do niego wrócić (np. z podglądu wydruku):</p>
+<p>Przez większość czasu pracujesz rysując model w "przestrzeni modelu" (widok z czarnym tłem), ale gdy potrzebujesz do niego wrócić (np. z podglądu wydruku):</p>
 </div>
 <div class="paragraph">
-<p><code>LMBx2</code> <em>Block List &gt; Model</em>:</p>
+<p><code>LMBx2</code>: <code><em>Block List &gt; Model</em></code>:</p>
 </div>
-<div class="imageblock">
+<div class="imageblock text-center">
 <div class="content">
 <img src="img/model_space.png" alt="model space">
 </div>
-<div class="title">Figure 2. Wybierz "Model space"</div>
+<div class="title">Figure 4. Wybierz "Model (*Model space)"</div>
 </div>
 </div>
 <div class="sect2">
@@ -983,7 +1014,7 @@ W zależności który z "bazowych" plików ściągnąłeś w poprzednim kroku, m
 <div class="sect2">
 <h3 id="_stwórz_nową_stronę">5.1. Stwórz nową stronę</h3>
 <div class="paragraph">
-<p><em>Block &gt; Add Layout Block</em>:</p>
+<p><code><em>Block &gt; Add Layout Block</em></code>:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1001,11 +1032,11 @@ W zależności który z "bazowych" plików ściągnąłeś w poprzednim kroku, m
 <div class="paragraph">
 <p>Upewnij się, że nowo utworzona strona jest aktywna w panelu <em>Block List</em> (ma wyświetloną ikonę ołówka). Jeśli nie jest, kliknij jej nazwę dwa razy:</p>
 </div>
-<div class="imageblock">
+<div class="imageblock text-center">
 <div class="content">
 <img src="img/presentation_current_page_selection.png" alt="presentation current page selection">
 </div>
-<div class="title">Figure 3. Nowa strona jest aktywna</div>
+<div class="title">Figure 5. Nowa strona jest aktywna</div>
 </div>
 <div class="paragraph">
 <p>To automatycznie włącza podgląd wydruku. W tej chwili strona może jeszcze nie być widoczna na ekranie - naprawimy to za moment.</p>
@@ -1013,7 +1044,10 @@ W zależności który z "bazowych" plików ściągnąłeś w poprzednim kroku, m
 </div>
 <div class="sect2">
 <h3 id="_wyłącz_kolory">5.3. Wyłącz kolory</h3>
-<div class="imageblock">
+<div class="paragraph">
+<p>&#8230;&#8203;o ile nie są już wyłączone:</p>
+</div>
+<div class="imageblock text-center">
 <div class="content">
 <img src="img/print_preview_black_and_white.png" alt="print preview black and white">
 </div>
@@ -1022,7 +1056,7 @@ W zależności który z "bazowych" plików ściągnąłeś w poprzednim kroku, m
 <div class="sect2">
 <h3 id="ustaw-rozmiar-orientacje-strony">5.4. Ustaw rozmiar i orientację strony</h3>
 <div class="paragraph">
-<p><em>Edit &gt; <strong>Drawing preferences</strong> &gt; Printing &gt; Page</em>:</p>
+<p>Otwórz: <code><em>Edit &gt; <strong>Drawing preferences</strong> &gt; Printing &gt; Page</em></code>. Tam:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1030,7 +1064,7 @@ W zależności który z "bazowych" plików ściągnąłeś w poprzednim kroku, m
 <p>Ustaw orientację strony w <em>Page Orientation</em>.</p>
 </li>
 <li>
-<p>Ustaw rozmiar papieru w <em>Paper &gt; Paper size</em>.</p>
+<p>Ustaw rozmiar papieru w <code><em>Paper &gt; Paper size</em></code>.</p>
 </li>
 </ul>
 </div>
@@ -1040,11 +1074,11 @@ W zależności który z "bazowych" plików ściągnąłeś w poprzednim kroku, m
 <div class="paragraph">
 <p>Kliknij ikonę <em>Auto zoom to page(s)</em> na pasku narzędzi:</p>
 </div>
-<div class="imageblock">
+<div class="imageblock text-center">
 <div class="content">
 <img src="img/presentation_auto_zoom_to_pages.png" alt="presentation auto zoom to pages">
 </div>
-<div class="title">Figure 4. Auto zoom to page(s)</div>
+<div class="title">Figure 6. Auto zoom to page(s)</div>
 </div>
 <div class="admonitionblock warning">
 <table>
@@ -1053,7 +1087,12 @@ W zależności który z "bazowych" plików ściągnąłeś w poprzednim kroku, m
 <div class="title">Warning</div>
 </td>
 <td class="content">
-Nie pomyl ikony, i nie kliknij <em>Auto center</em> (<span class="image"><img src="img/auto_center.png" alt="auto center"></span>) przez pomyłkę. To narzędzie automatycznie przesuwa elementy już umieszczone na stronie do jej centrum, zamiast przesuwać <em>podgląd</em> samej strony, bez wpływu na jej zawartość.
+<div class="paragraph">
+<p>Nie pomyl ikony, i <strong>nie kliknij</strong> omyłkowo <em>Auto center</em> (<span class="image"><img src="img/auto_center.png" alt="auto center"></span>). To narzędzie automatycznie przesuwa elementy już umieszczone na stronie do jej centrum, czego odwrócenie nie zawsze jest łatwe.</p>
+</div>
+<div class="paragraph">
+<p>My chcemy tylko łatwo wycentrować <em>podgląd</em> strony na ekranie, a nie zmieniać jej zawartość.</p>
+</div>
 </td>
 </tr>
 </table>
@@ -1062,37 +1101,34 @@ Nie pomyl ikony, i nie kliknij <em>Auto center</em> (<span class="image"><img sr
 <div class="sect2">
 <h3 id="_dodaj_ramkę">5.6. Dodaj ramkę</h3>
 <div class="paragraph">
-<p>Otwórz bibliotekę: zaznacz <em>View &gt; Library Browser</em>.</p>
-</div>
-<div class="paragraph">
-<p>W prawym, górnym rogu okna pojawi się przeglądarka biblioteki (<em>Library Browser</em>). Tamże:</p>
+<p>W panelu <em>Libray browser</em> po prawej stronie ekranu (wspomniany w sekcji <a href="#kluczowe-panele">Włącz kluczowe panele</a>):</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>wybierz zakładkę <em>File system</em>,</p>
+<p>wybierz zakładkę "<em>File system</em>",</p>
 </li>
 <li>
-<p>w rozwijalnym menu pod zakładką wybierz <em>ramki</em>,</p>
+<p>w rozwijalnym menu pod zakładką wybierz "<em>ramki</em>",</p>
 </li>
 <li>
-<p>w panelu poniżej zaznacz <em>ramki</em>,</p>
+<p>w panelu poniżej zaznacz "<em>ramki</em>",</p>
 </li>
 <li>
-<p>powiększ lewy dolny róg białej strony na ekranie,</p>
+<p>powiększ lewy dolny róg białej strony na ekranie (jak na poniższej ilustracji),</p>
 </li>
 <li>
-<p>w panelu poniżej <code>LMBx2</code> wybierz ramkę o rozmiarze i orientacji takich jakie nadałeś stronie (w kroku <a href="#ustaw-rozmiar-orientacje-strony">Ustaw rozmiar i orientację strony</a>),</p>
+<p>w panelu poniżej <code>LMBx2</code> ramkę o rozmiarze i orientacji odpowiadających rozmiarowi i orientacji stronie (nadanych w kroku <a href="#ustaw-rozmiar-orientacje-strony">Ustaw rozmiar i orientację strony</a>),</p>
 </li>
 <li>
-<p>wybierz <em>Snap &gt; Grid</em>,</p>
+<p>wybierz <code><em>Snap &gt; Grid</em></code>,</p>
 </li>
 <li>
 <p>kliknij w rogu, w miejscu przecięcia się szarych, wąskich krawędzi białego obszaru (punkt przedstawiony czerwonym celownikiem na poniższej ilustracji),</p>
 </li>
 </ul>
 </div>
-<div class="imageblock">
+<div class="imageblock text-center">
 <div class="content">
 <img src="img/anchor_frame.png" alt="anchor frame">
 </div>
@@ -1109,7 +1145,7 @@ Nie pomyl ikony, i nie kliknij <em>Auto center</em> (<span class="image"><img sr
 <p>zaznacz ramkę (<code>LMB</code>),</p>
 </li>
 <li>
-<p>wybierz <em>Block &gt; Explode</em>.</p>
+<p>wybierz <code><em>Block &gt; Explode</em></code>.</p>
 </li>
 </ul>
 </div>
@@ -1132,7 +1168,7 @@ Wklejona ramka automatycznie dodaje nową warstwę o nazwie "<em>ramka tabliczka
 <div class="title">Note</div>
 </td>
 <td class="content">
-Ramka ta dodaje również blok o nazwie takiej jaką wybrałeś z biblioteki (np. <em>A2 poziom</em>). Ten blok można usunąć, ale tylko jeśli wykonałeś <em>Block &gt; Explode</em> na ramce, jak opisano powyżej.
+Ramka ta dodaje również blok o nazwie takiej, jaką wybrałeś z biblioteki (np. <em>A2 poziom</em>). Ten blok można usunąć, ale tylko jeśli wykonałeś <code><em>Block &gt; Explode</em></code> na ramce, jak opisano powyżej.
 </td>
 </tr>
 </table>
@@ -1150,7 +1186,7 @@ Ramka ta dodaje również blok o nazwie takiej jaką wybrałeś z biblioteki (np
 <div class="title">Note</div>
 </td>
 <td class="content">
-Jeśli nowy tekst wykracza poza objętość pola, zmniejsz go w oknie dialogowym w polu <em>Height</em> w lewym górnym rogu. Wartość tego pola wyraża się w jednostkach rysunku.
+Jeśli nowy tekst wykracza poza objętość pola, zmniejsz go w oknie dialogowym w polu "<em>Height</em>" w lewym górnym rogu. Wartość tego pola wyraża się w jednostkach rysunku.
 </td>
 </tr>
 </table>
@@ -1159,35 +1195,55 @@ Jeśli nowy tekst wykracza poza objętość pola, zmniejsz go w oknie dialogowym
 <div class="sect2">
 <h3 id="nowy-widok">5.8. Dodaj widok elementu</h3>
 <div class="paragraph">
-<p>Niektóre elementy są zorientowane w modelu w pionie/poziomie. Takie elementy zwykle będziemy przedstawiać na papierze w tej samej orientacji, w jakiej znajdują się w modelu. Przykładem są słupy, poziome belki lub blachy czołowe:</p>
+<p>Niektóre elementy są w modelu zorientowane w pionie lub poziomie. Takie elementy zwykle będziemy przedstawiać na papierze w tej samej orientacji, w jakiej znajdują się w modelu. Przykładem są słupy, poziome belki lub blachy czołowe:</p>
 </div>
-<div class="imageblock left">
+<table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="img/blacha_czolowa_model.png" alt="blacha czolowa model">
 </div>
-<div class="title">Figure 5. Blacha czołowa w modelu</div>
-</div>
-<div class="imageblock">
+<div class="title">Figure 7. Blacha czołowa w modelu</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="img/blacha_czolowa_papier.png" alt="blacha czolowa papier">
 </div>
-<div class="title">Figure 6. Blacha czołowa na papierze</div>
-</div>
+<div class="title">Figure 8. Blacha czołowa na papierze</div>
+</div></div></td>
+</tr>
+</tbody>
+</table>
 <div class="paragraph">
 <p>Inne elementy są w modelu zorientowane "po skosie", jednak na papierze chcielibyśmy je obrócić dla lepszego wykorzystania miejsca na papierze, czytelności, i większej łatwości wymiarowania. Przykładem takich elementów są ukośne rygle, krokwie i narożne blachy wzmacniające węzeł słup-rygiel:</p>
 </div>
-<div class="imageblock left">
+<table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="img/blacha_narozna_model_skos.png" alt="blacha narozna model skos">
 </div>
-<div class="title">Figure 7. Blacha narożna w modelu - po skosie</div>
-</div>
-<div class="imageblock">
+<div class="title">Figure 9. Blacha narożna w modelu - po skosie</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
 <div class="content">
 <img src="img/blacha_narozna_papier_poziom.png" alt="blacha narozna papier poziom">
 </div>
-<div class="title">Figure 8. Blacha narożna na papierze - w poziomie</div>
-</div>
+<div class="title">Figure 10. Blacha narożna na papierze - w poziomie</div>
+</div></div></td>
+</tr>
+</tbody>
+</table>
 <div class="paragraph">
 <p>Zacznijmy od elementów zorientowanych w pionie. W późniejszej sekcji <a href="#nowy-widok-skos">Widok elementów zorientowanych po skosie</a>, zobaczymy jak radzić sobie z elementami, które są zorientowane "po skosie" i wymagają obrotu na papierze.</p>
 </div>
@@ -1211,10 +1267,19 @@ Jeśli nowy tekst wykracza poza objętość pola, zmniejsz go w oknie dialogowym
 <div class="sect4">
 <h5 id="nowy-widok-poziom-zacznij-dodawac">5.8.1.3. Zacznij dodawać widok</h5>
 <div class="paragraph">
-<p>Dodaj widok elementu, wybierając <em>Draw &gt; Viewport &gt; Add viewport</em>.</p>
+<p>Dodaj widok elementu, wybierając <code><em>Draw &gt; Viewport &gt; Add viewport</em></code>.</p>
 </div>
-<div class="paragraph">
-<p>To chwilowo wyłącza podgląd wydruku (ten z białym tłem) i przenosi Cię do podglądu modelu (tego z czarnym tłem).</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+To chwilowo wyłącza podgląd wydruku (ten z białym tłem) i przenosi Cię do podglądu modelu (tego z czarnym tłem).
+</td>
+</tr>
+</table>
 </div>
 </div>
 <div class="sect4">
@@ -1222,11 +1287,11 @@ Jeśli nowy tekst wykracza poza objętość pola, zmniejsz go w oknie dialogowym
 <div class="paragraph">
 <p>Wprowadź skalę w jakiej chcesz przedstawić element na stronie w polu <em>Scale</em>. Możesz stosować notację 1:20, 1/20 lub 0.05.</p>
 </div>
-<div class="imageblock">
+<div class="imageblock text-center">
 <div class="content">
 <img src="img/presentation_viewport_set_scale.png" alt="presentation viewport set scale">
 </div>
-<div class="title">Figure 9. Ustawianie skali widoku w momencie jego tworzenia</div>
+<div class="title">Figure 11. Ustawianie skali widoku w momencie jego tworzenia</div>
 </div>
 </div>
 <div class="sect4">
@@ -1259,9 +1324,11 @@ Pamiętaj, że możesz przesuwać, pomniejszać i powiększać podgląd modelu, 
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<div class="title">Obrys blachy czołowej</div>
-<p><span class="image"><img src="img/blacha_czolowa_model_obrys.png" alt="blacha czolowa model obrys"></span></p>
+<div class="imageblock text-center">
+<div class="content">
+<img src="img/blacha_czolowa_model_obrys.png" alt="blacha czolowa model obrys">
+</div>
+<div class="title">Figure 12. Obrys blachy czołowej</div>
 </div>
 <div class="paragraph">
 <p>Drugi klik zabiera Cię z powrotem do podglądu wydruku (tego z białym tłem).</p>
@@ -1364,14 +1431,14 @@ Pamiętaj, że możesz przesuwać, pomniejszać i powiększać podgląd modelu, 
 <div class="ulist">
 <ul>
 <li>
-<p>Wejdź w przestrzeń modelu: <code>LMBx2</code> <em>Block List &gt; Model (Model_Space)</em></p>
+<p>Wejdź w przestrzeń modelu: <code>LMBx2</code> <code><em>Block List &gt; Model (Model_Space)</em></code>.</p>
 </li>
 <li>
-<p>Narysuj poziomą, pomocniczą, tymczasową linię, przecinającą się z najdłuższą krawędzią elementu:</p>
+<p>Narysuj poziomą, pomocniczą, tymczasową linię, przecinającą się z najdłuższą krawędzią elementu (<code><em>Misc &gt; Draw &gt; Horizontal Construction Line</em></code>):</p>
 </li>
 </ul>
 </div>
-<div class="imageblock">
+<div class="imageblock text-center">
 <div class="content">
 <img src="img/blacha_narozna_model_skos_guide_line.png" alt="blacha narozna model skos guide line">
 </div>
@@ -1379,7 +1446,7 @@ Pamiętaj, że możesz przesuwać, pomniejszać i powiększać podgląd modelu, 
 <div class="ulist">
 <ul>
 <li>
-<p>Wybierz narzędzie <em>Info &gt; Angle</em>.</p>
+<p>Wybierz narzędzie <code><em>Info &gt; Angle</em></code>.</p>
 </li>
 <li>
 <p>Kliknij nowo narysowaną linię pomocniczą w pobliżu punktu przecięcia (1).</p>
@@ -1389,7 +1456,7 @@ Pamiętaj, że możesz przesuwać, pomniejszać i powiększać podgląd modelu, 
 </li>
 </ul>
 </div>
-<div class="imageblock">
+<div class="imageblock text-center">
 <div class="content">
 <img src="img/blacha_narozna_model_skos_guide_line_info_angle_clicks.png" alt="blacha narozna model skos guide line info angle clicks">
 </div>
@@ -1401,11 +1468,11 @@ Pamiętaj, że możesz przesuwać, pomniejszać i powiększać podgląd modelu, 
 </li>
 </ul>
 </div>
-<div class="imageblock">
+<div class="imageblock text-center">
 <div class="content">
 <img src="img/info_angle_dialogue.png" alt="info angle dialogue">
 </div>
-<div class="title">Figure 10. Wartość zmierzonego kąta</div>
+<div class="title">Figure 13. Wartość zmierzonego kąta</div>
 </div>
 </div>
 <div class="sect4">
@@ -1428,7 +1495,7 @@ Pamiętaj, że możesz przesuwać, pomniejszać i powiększać podgląd modelu, 
 <div class="paragraph">
 <p>Wklej tę skopiowaną wartość kąta w polu <em>Rotation</em>:</p>
 </div>
-<div class="imageblock">
+<div class="imageblock text-center">
 <div class="content">
 <img src="img/paste_viewport_enter_rotation.png" alt="paste viewport enter rotation">
 </div>
@@ -1445,20 +1512,20 @@ Pamiętaj, że możesz przesuwać, pomniejszać i powiększać podgląd modelu, 
 <div class="paragraph">
 <p>Tym razem, prostokąt obrysu wyświetlany w modelu będzie zorientowany po skosie, bo zmieniliśmy wartość kąta w polu <em>Rotation</em>. Weź to pod uwagę, wyznaczając narożniki (1) i (2):</p>
 </div>
-<div class="imageblock">
+<div class="imageblock text-center">
 <div class="content">
 <img src="img/paste_viewport_outline_correct.png" alt="paste viewport outline correct">
 </div>
-<div class="title">Figure 11. Obrys widoku</div>
+<div class="title">Figure 14. Obrys widoku - prawidłowy</div>
 </div>
 <div class="paragraph">
 <p>Krawędź obrysu musi być równoległa do tej krawędzi elementu, dla której zmierzyliśmy kąt obrotu. Jeśli nie jest ona równoległa, podaj wartość kąta obrotu jako ujemną w polu <em>Rotation</em> (poprzedź ją znakiem minus).</p>
 </div>
-<div class="imageblock">
+<div class="imageblock text-center">
 <div class="content">
 <img src="img/paste_viewport_outline_incorrect.png" alt="paste viewport outline incorrect">
 </div>
-<div class="title">Figure 12. Obrys widoku — nieprawidłowy</div>
+<div class="title">Figure 15. Obrys widoku — nieprawidłowy</div>
 </div>
 </div>
 </div>
@@ -1479,9 +1546,17 @@ Pamiętaj, że możesz przesuwać, pomniejszać i powiększać podgląd modelu, 
 <p>Wybierz narzędzie do wymiarowania.</p>
 </li>
 <li>
-<p>Upewnij się, że na pasku ustawień narzędzia skala (<em>Scale</em>) jest ustawiona na <em>Auto</em>:
-<span class="image"><img src="img/tool_bar_dimensions_scale_auto.png" alt="tool bar dimensions scale auto"></span></p>
+<p>Upewnij się, że na pasku ustawień narzędzia skala (<em>Scale</em>) jest ustawiona na <em>Auto</em>:</p>
 </li>
+</ul>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="img/tool_bar_dimensions_scale_auto.png" alt="tool bar dimensions scale auto">
+</div>
+</div>
+<div class="ulist">
+<ul>
 <li>
 <p>Nadaj elementowi wymiar:</p>
 <div class="ulist">
@@ -1511,7 +1586,7 @@ Pamiętaj, że możesz przesuwać, pomniejszać i powiększać podgląd modelu, 
 <dl>
 <dt class="hdlist1">Warstwa drukowalna/niedrukowalna</dt>
 <dd>
-<p>Warstwy domyślnie są drukowalne, tzn. należące do nich obiekty są widoczne w podglądzie wydruku (o ile warstwa jest włączona) i drukowane na papierze. Warstwę można uczynić "niedrukowalną" przez wyłączeniu jej parametru <em>Plottable</em>. Obiekty do takiej warstwy nie będą widoczne na podglądzie wydruku (nawet jeśli warstwa jest włączona) ani nie będą drukowane na papierze. Aliści, o ile niedrukowalna warstwa jest włączona jej obiekty będą widoczne w modelu.</p>
+<p>(ang: <em>plottable layers</em>) Warstwy domyślnie są drukowalne, tzn. należące do nich obiekty są widoczne w podglądzie wydruku (o ile warstwa jest włączona) i drukowane na papierze. Warstwę można uczynić "niedrukowalną" przez wyłączeniu jej parametru <em>Plottable</em>. Obiekty do takiej warstwy nie będą widoczne na podglądzie wydruku (nawet jeśli warstwa jest włączona) ani nie będą drukowane na papierze. Aliści, o ile niedrukowalna warstwa jest włączona jej obiekty będą widoczne w modelu.</p>
 </dd>
 </dl>
 </div>
@@ -1520,7 +1595,7 @@ Pamiętaj, że możesz przesuwać, pomniejszać i powiększać podgląd modelu, 
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-09-07 19:20:57 +0100
+Last updated 2022-09-10 17:36:28 +0100
 </div>
 </div>
 </body>

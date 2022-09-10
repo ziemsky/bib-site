@@ -1,4 +1,4 @@
 == Słownik pojęć
 
 [#niedrukowalna-warstwa]
-Warstwa drukowalna/niedrukowalna:: Warstwy domyślnie są drukowalne, tzn. należące do nich obiekty są widoczne w podglądzie wydruku (o ile warstwa jest włączona) i drukowane na papierze. Warstwę można uczynić "niedrukowalną" przez wyłączeniu jej parametru _Plottable_. Obiekty do takiej warstwy nie będą widoczne na podglądzie wydruku (nawet jeśli warstwa jest włączona) ani nie będą drukowane na papierze. Aliści, o ile niedrukowalna warstwa jest włączona jej obiekty będą widoczne w modelu.
+Warstwa drukowalna/niedrukowalna:: (ang: _plottable layers_) Warstwy domyślnie są drukowalne, tzn. należące do nich obiekty są widoczne w podglądzie wydruku (o ile warstwa jest włączona) i drukowane na papierze. Warstwę można uczynić "niedrukowalną" przez wyłączeniu jej parametru _Plottable_. Obiekty do takiej warstwy nie będą widoczne na podglądzie wydruku (nawet jeśli warstwa jest włączona) ani nie będą drukowane na papierze. Aliści, o ile niedrukowalna warstwa jest włączona jej obiekty będą widoczne w modelu.
