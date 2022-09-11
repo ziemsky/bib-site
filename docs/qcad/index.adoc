@@ -141,7 +141,11 @@ To spowoduje wyświetlania wartości "tymczasowych" pomiarów (tzn. wykonanych n
 
 === Ściągnij pliki ramek
 
-Na dysku Twojgo komputera stwórz katalog "_qcad biblioteka_" a w nim katalog "_ramki_" (np. w katalogu "_Dokumenty_").
+Na dysku Twojgo komputera (np. w katalogu "_Dokumenty_" albo tam gdzie trzymasz swoje projekty) stwórz strukturę katalogów:
+
+* _qcad_
+** _biblioteka_
+*** _ramki_
 
 Ściągnij następujące pliki, jeden po drugim, do tego nowo utworzonego katalogu "_ramki_":
 
@@ -158,7 +162,7 @@ Na dysku Twojgo komputera stwórz katalog "_qcad biblioteka_" a w nim katalog "_
 * xref:drawings/ramki/A4 poziom obrocona.dxf[A4 poziom obrocona.dxf]
 * xref:drawings/ramki/tabliczka.dxf[tabliczka.dxf]
 
-Dodaj je do biblioteki QCAD'a:
+Dodaj je teraz do biblioteki QCAD'a:
 
 * Otwórz: `_Edit > *Application Preferences* > Widgets > Library Browser > Library Sources_`
 * W panelu _Library Sources_ kliknij _Add_
@@ -167,22 +171,48 @@ Dodaj je do biblioteki QCAD'a:
 * Kliknij _OK_ aby zatwierdzić zmiany ustawień.
 * Zamknij i otwórz QCAD'a.
 
+=== Ściągnij pliki szablonów rysunków
+
+Na dysku Twojgo komputera, w katalogu _qcad > biblioteka_ (stworzonym w powyższym kroku), utwórz katalog "_szablony_".
+
+Ściągnij następujące pliki, jeden po drugim, do tego nowo utworzonego katalogu "_szablony_":
+
+* xref:drawings/szablony/rysunek qcad - wymiary w milimetrach.dxf[rysunek qcad - wymiary w milimetrach.dxf]
+* xref:drawings/szablony/rysunek qcad - wymiary w centymetrach.dxf[rysunek qcad - wymiary w centymetrach.dxf]
+
+Zarejestruj pliki szablonów w QCAD'zie:
+
+* Otwórz: `_Edit > *Application Preferences* > File > Templates_`
+* W panelu _File: Templates_ kliknij _Add_
+* W oknie dialogowym, które się pojawi, znajdź i wejdź do katalogu "_szablony_" utworzonego powyżej.
+* Kliknij _Choose_ aby zatwierdzić wybór.
+* Kliknij _OK_ aby zatwierdzić zmiany ustawień.
+* Zamknij i otwórz QCAD'a.
+
 [#nowy-rysunek]
 == Stwórz nowy rysunek
 
-=== Ściągnij bazowy plik
-Ściągnij jeden z następujących plików na swój komputer, zapisz go w katalogu Twojego projektu i zmień jego nazwę:
+=== Zamknij domyślny, pusty rysunek
 
-* xref:drawings/rysunek qcad - wymiary w milimetrach.dxf[rysunek qcad - wymiary w milimetrach.dxf] - dla rysunków stali
-* xref:drawings/rysunek qcad - wymiary w centymetrach.dxf[rysunek qcad - wymiary w centymetrach.dxf] - dla rysunków obiektów murowanych i drewnianych
+W czasie uruchamiania, QCAD automatycznie tworzy pusty rysunek. Jeśli tak właśnie się stało, zamknij ten rysunek (bez zamykania samego programu):
+* `_File > Close_`
+* wybierz "_Close without Saving_".
+
+=== Stwórz nowy rysunek z szablonu
+
+* `_File > New from Template..._`
+* Wybierz szablon, klikając jeden z poniższych szablonów:
+** "_rysunek qcad - wymiary w milimetrach_" - dla rysunków stali
+** "_rysunek qcad - wymiary w centymetrach_" - dla rysunków obiektów murowanych i drewnianych
+* Kliknij `_Create New Drawing_` aby stworzyć rysunek.
 
 === Warstwy
 Ściągnięte pliki zawierają kilka użytecznych, już skonfigurowanych warstw. Uzyj ich dla uproszczenia rysowania:
 
-* `konstrukcja` - tu rysuj swój model - elementy stalowe, więźby, mury, etc.
-* `widoki` - tu umieszczaj widoki elementów dla wydruku (jak opisane w xref:#nowy-widok[])
-* `wymiary opisy (model)` - tu umieszczaj pomocnicze opisy i wymiary, które powinny być widoczne tylko w modelu, a które nie powinny być drukowane na papierze. Innymi słowy, są to elementy, które służą Tobie, jako rysownikowi, ale które nie powinny być uwidocznione czytelnikowi rysunku.
-* `wymiary opisy (papier)` - tu umieszczaj opisy i wymiary, które powinny być drukowane na papierze.
+* `konstrukcja` - tu rysuj swój *model* - elementy stalowe, więźby, mury, etc.
+* `widoki` - tu umieszczaj widoki elementów *dla wydruku* (jak opisane w xref:#nowy-widok[])
+* `wymiary opisy (model)` - tu umieszczaj pomocnicze opisy i wymiary, które powinny być *widoczne tylko w modelu*, a które nie powinny być drukowane na papierze. Innymi słowy, są to elementy, które służą Tobie, jako rysownikowi, ale które nie powinny być uwidocznione czytelnikowi rysunku.
+* `wymiary opisy (papier)` - tu umieszczaj opisy i wymiary, które powinny być *drukowane na papierze*.
 
 [#model]
 == Narysuj model
@@ -198,7 +228,7 @@ W zależności który z "bazowych" plików ściągnąłeś w poprzednim kroku, m
 
 Przez większość czasu pracujesz rysując model w "przestrzeni modelu" (widok z czarnym tłem), ale gdy potrzebujesz do niego wrócić (np. z podglądu wydruku):
 
-`LMBx2`: `_Block List > Model_`:
+`LMBx2`: `_Block List > Model (*Model space)_`:
 
 .Wybierz "Model (*Model space)"
 image::img/model_space.png[align=center]
@@ -224,8 +254,8 @@ To powiedziawszy, nieco komentarza, numeracja elementów lub kilka kluczowych wy
 
 Jeśli chcesz takie pomocnicze elementy umieścić w modelu, pamiętaj, aby:
 
-* umieszczać je na xref:#niedrukowalna-warstwa[niedrukowalnej warstwie] `wymiary opisy (model)`.,
-* nadawać im duży rozmiar czcionek (w modelu używamy skali 1:1, na papierze zwykle jest to skala znacznie większa, więc czcionki w rozmiarze dobrze wyglądającym na papierze są nieczyteline małe w modelu).
+* umieszczać je na xref:#niedrukowalna-warstwa[niedrukowalnej warstwie] "_wymiary opisy (model)_",
+* nadawać im duży rozmiar czcionek (w modelu używamy skali 1:1, na papierze zwykle jest to skala znacznie większa, więc czcionki w rozmiarze dobrze wyglądającym na papierze są nieczytelnie małe w modelu).
 
 [#prezentacja]
 == Przedstaw model na wydruku

@@ -470,12 +470,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_wyłącz_linię_komend">2.5. Wyłącz linię komend</a></li>
 <li><a href="#_włącz_wyświetlanie_pomiarów_w_oknie_dialogu">2.6. Włącz wyświetlanie pomiarów w oknie dialogu</a></li>
 <li><a href="#_ściągnij_pliki_ramek">2.7. Ściągnij pliki ramek</a></li>
+<li><a href="#_ściągnij_pliki_szablonów_rysunków">2.8. Ściągnij pliki szablonów rysunków</a></li>
 </ul>
 </li>
 <li><a href="#nowy-rysunek">3. Stwórz nowy rysunek</a>
 <ul class="sectlevel2">
-<li><a href="#_ściągnij_bazowy_plik">3.1. Ściągnij bazowy plik</a></li>
-<li><a href="#_warstwy">3.2. Warstwy</a></li>
+<li><a href="#_zamknij_domyślny_pusty_rysunek">3.1. Zamknij domyślny, pusty rysunek</a></li>
+<li><a href="#_stwórz_nowy_rysunek_z_szablonu">3.2. Stwórz nowy rysunek z szablonu</a></li>
+<li><a href="#_warstwy">3.3. Warstwy</a></li>
 </ul>
 </li>
 <li><a href="#model">4. Narysuj model</a>
@@ -804,7 +806,28 @@ To spowoduje wyświetlania wartości "tymczasowych" pomiarów (tzn. wykonanych n
 <div class="sect2">
 <h3 id="_ściągnij_pliki_ramek">2.7. Ściągnij pliki ramek</h3>
 <div class="paragraph">
-<p>Na dysku Twojgo komputera stwórz katalog "<em>qcad biblioteka</em>" a w nim katalog "<em>ramki</em>" (np. w katalogu "<em>Dokumenty</em>").</p>
+<p>Na dysku Twojgo komputera (np. w katalogu "<em>Dokumenty</em>" albo tam gdzie trzymasz swoje projekty) stwórz strukturę katalogów:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><em>qcad</em></p>
+<div class="ulist">
+<ul>
+<li>
+<p><em>biblioteka</em></p>
+<div class="ulist">
+<ul>
+<li>
+<p><em>ramki</em></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p>Ściągnij następujące pliki, jeden po drugim, do tego nowo utworzonego katalogu "<em>ramki</em>":</p>
@@ -850,7 +873,7 @@ To spowoduje wyświetlania wartości "tymczasowych" pomiarów (tzn. wykonanych n
 </ul>
 </div>
 <div class="paragraph">
-<p>Dodaj je do biblioteki QCAD&#8217;a:</p>
+<p>Dodaj je teraz do biblioteki QCAD&#8217;a:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -875,45 +898,107 @@ To spowoduje wyświetlania wartości "tymczasowych" pomiarów (tzn. wykonanych n
 </ul>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_ściągnij_pliki_szablonów_rysunków">2.8. Ściągnij pliki szablonów rysunków</h3>
+<div class="paragraph">
+<p>Na dysku Twojgo komputera, w katalogu <em>qcad &gt; biblioteka</em> (stworzonym w powyższym kroku), utwórz katalog "<em>szablony</em>".</p>
+</div>
+<div class="paragraph">
+<p>Ściągnij następujące pliki, jeden po drugim, do tego nowo utworzonego katalogu "<em>szablony</em>":</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="drawings/szablony/rysunek qcad - wymiary w milimetrach.dxf">rysunek qcad - wymiary w milimetrach.dxf</a></p>
+</li>
+<li>
+<p><a href="drawings/szablony/rysunek qcad - wymiary w centymetrach.dxf">rysunek qcad - wymiary w centymetrach.dxf</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Zarejestruj pliki szablonów w QCAD&#8217;zie:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Otwórz: <code><em>Edit &gt; <strong>Application Preferences</strong> &gt; File &gt; Templates</em></code></p>
+</li>
+<li>
+<p>W panelu <em>File: Templates</em> kliknij <em>Add</em></p>
+</li>
+<li>
+<p>W oknie dialogowym, które się pojawi, znajdź i wejdź do katalogu "<em>szablony</em>" utworzonego powyżej.</p>
+</li>
+<li>
+<p>Kliknij <em>Choose</em> aby zatwierdzić wybór.</p>
+</li>
+<li>
+<p>Kliknij <em>OK</em> aby zatwierdzić zmiany ustawień.</p>
+</li>
+<li>
+<p>Zamknij i otwórz QCAD&#8217;a.</p>
+</li>
+</ul>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="nowy-rysunek">3. Stwórz nowy rysunek</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_ściągnij_bazowy_plik">3.1. Ściągnij bazowy plik</h3>
+<h3 id="_zamknij_domyślny_pusty_rysunek">3.1. Zamknij domyślny, pusty rysunek</h3>
 <div class="paragraph">
-<p>Ściągnij jeden z następujących plików na swój komputer, zapisz go w katalogu Twojego projektu i zmień jego nazwę:</p>
+<p>W czasie uruchamiania, QCAD automatycznie tworzy pusty rysunek. Jeśli tak właśnie się stało, zamknij ten rysunek (bez zamykania samego programu):
+* <code><em>File &gt; Close</em></code>
+* wybierz "<em>Close without Saving</em>".</p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_stwórz_nowy_rysunek_z_szablonu">3.2. Stwórz nowy rysunek z szablonu</h3>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="drawings/rysunek qcad - wymiary w milimetrach.dxf">rysunek qcad - wymiary w milimetrach.dxf</a> - dla rysunków stali</p>
+<p><code><em>File &gt; New from Template&#8230;&#8203;</em></code></p>
 </li>
 <li>
-<p><a href="drawings/rysunek qcad - wymiary w centymetrach.dxf">rysunek qcad - wymiary w centymetrach.dxf</a> - dla rysunków obiektów murowanych i drewnianych</p>
+<p>Wybierz szablon, klikając jeden z poniższych szablonów:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>"<em>rysunek qcad - wymiary w milimetrach</em>" - dla rysunków stali</p>
+</li>
+<li>
+<p>"<em>rysunek qcad - wymiary w centymetrach</em>" - dla rysunków obiektów murowanych i drewnianych</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Kliknij <code><em>Create New Drawing</em></code> aby stworzyć rysunek.</p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_warstwy">3.2. Warstwy</h3>
+<h3 id="_warstwy">3.3. Warstwy</h3>
 <div class="paragraph">
 <p>Ściągnięte pliki zawierają kilka użytecznych, już skonfigurowanych warstw. Uzyj ich dla uproszczenia rysowania:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><code>konstrukcja</code> - tu rysuj swój model - elementy stalowe, więźby, mury, etc.</p>
+<p><code>konstrukcja</code> - tu rysuj swój <strong>model</strong> - elementy stalowe, więźby, mury, etc.</p>
 </li>
 <li>
-<p><code>widoki</code> - tu umieszczaj widoki elementów dla wydruku (jak opisane w <a href="#nowy-widok">Dodaj widok elementu</a>)</p>
+<p><code>widoki</code> - tu umieszczaj widoki elementów <strong>dla wydruku</strong> (jak opisane w <a href="#nowy-widok">Dodaj widok elementu</a>)</p>
 </li>
 <li>
-<p><code>wymiary opisy (model)</code> - tu umieszczaj pomocnicze opisy i wymiary, które powinny być widoczne tylko w modelu, a które nie powinny być drukowane na papierze. Innymi słowy, są to elementy, które służą Tobie, jako rysownikowi, ale które nie powinny być uwidocznione czytelnikowi rysunku.</p>
+<p><code>wymiary opisy (model)</code> - tu umieszczaj pomocnicze opisy i wymiary, które powinny być <strong>widoczne tylko w modelu</strong>, a które nie powinny być drukowane na papierze. Innymi słowy, są to elementy, które służą Tobie, jako rysownikowi, ale które nie powinny być uwidocznione czytelnikowi rysunku.</p>
 </li>
 <li>
-<p><code>wymiary opisy (papier)</code> - tu umieszczaj opisy i wymiary, które powinny być drukowane na papierze.</p>
+<p><code>wymiary opisy (papier)</code> - tu umieszczaj opisy i wymiary, które powinny być <strong>drukowane na papierze</strong>.</p>
 </li>
 </ul>
 </div>
@@ -947,7 +1032,7 @@ W zależności który z "bazowych" plików ściągnąłeś w poprzednim kroku, m
 <p>Przez większość czasu pracujesz rysując model w "przestrzeni modelu" (widok z czarnym tłem), ale gdy potrzebujesz do niego wrócić (np. z podglądu wydruku):</p>
 </div>
 <div class="paragraph">
-<p><code>LMBx2</code>: <code><em>Block List &gt; Model</em></code>:</p>
+<p><code>LMBx2</code>: <code><em>Block List &gt; Model (*Model space)</em></code>:</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
@@ -995,10 +1080,10 @@ W zależności który z "bazowych" plików ściągnąłeś w poprzednim kroku, m
 <div class="ulist">
 <ul>
 <li>
-<p>umieszczać je na <a href="#niedrukowalna-warstwa">niedrukowalnej warstwie</a> <code>wymiary opisy (model)</code>.,</p>
+<p>umieszczać je na <a href="#niedrukowalna-warstwa">niedrukowalnej warstwie</a> "<em>wymiary opisy (model)</em>",</p>
 </li>
 <li>
-<p>nadawać im duży rozmiar czcionek (w modelu używamy skali 1:1, na papierze zwykle jest to skala znacznie większa, więc czcionki w rozmiarze dobrze wyglądającym na papierze są nieczyteline małe w modelu).</p>
+<p>nadawać im duży rozmiar czcionek (w modelu używamy skali 1:1, na papierze zwykle jest to skala znacznie większa, więc czcionki w rozmiarze dobrze wyglądającym na papierze są nieczytelnie małe w modelu).</p>
 </li>
 </ul>
 </div>
@@ -1595,7 +1680,7 @@ Pamiętaj, że możesz przesuwać, pomniejszać i powiększać podgląd modelu, 
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-09-10 23:00:00 +0100
+Last updated 2022-09-11 14:47:15 +0100
 </div>
 </div>
 </body>
