@@ -113,39 +113,39 @@ Jeśli punkt, który naprawdę nas interesuje (np. punkt przecięcia jakiejś li
 Wyłączenie siatki w tym miejscu spowoduje, że nie będzie ona widoczna w _nowo_ utworzonych rysunkach. Jeśli masz już istniejący rysunek na ekranie, i chcesz wyłączyć siatkę w nim, powtórz powyższy krok w lokacji `_Edit > *Drawing Preferences* > General > Grid_`.
 
 ==== Wyłącz automatyczne przyciąganie do punktów siatki
-Odznacz: `_Edit > Application Preferences > Snap > Auto snap_ > _Grid points_`
+Odznacz: `_Edit > *Application Preferences* > Snap > Auto snap_ > _Grid points_`
 
 === Ustaw kolor wydruku
-Zaznacz: `_Edit > Application Preferences > Default for New Drawings > Printing - Colors_ > _Black / white_`
+Zaznacz: `_Edit > *Application Preferences* > Default for New Drawings > Printing - Colors_ > _Black / white_`
 
 === Wyłącz wyświetlanie "niedrukowalnych" warstw w podglądzie wydruku
-Zaznacz: `_Edit > Application Preferences > File > Print Preview_ > _Show only plottable layers_`
+Zaznacz: `_Edit > *Application Preferences* > File > Print Preview_ > _Show only plottable layers_`
 
 xref:#niedrukowalna-warstwa[Co to jest drukowalna i niedrukowalna warstwa?]
 
-=== Wyłącz linię komend
-Odznacz: `_View > Command Line_`
+=== Włącz wyświetlanie pomiarów w linii komend
 
-.Dlaczego?
-[%collapsible]
-====
-Linia komend jest użyteczna jako mechanizm szybszego wydawania komend, ale wymaga częstszego użycia klawiatury. Jako że ten przewodnik ogranicza użycia klawiatury do absolutnego minimum, wyłącz linię komend dla zaoszczędzenia miejsca na ekranie i zredukowania "wizualnego hałasu".
-====
+Odznacz: `_Edit > *Application Preferences* > Widgets > Command Line > Show information as dialog_`
 
-=== Włącz wyświetlanie pomiarów w oknie dialogu
+Odznacz: `_Edit > *Application Preferences* > Widgets > Command Line > Show warnings as dialog_`
 
-Zaznacz: `_Edit > Application Preferences > Widgets > Command Line > Show information as dialog_`
+=== Włącz linię komend
 
-[NOTE]
-To spowoduje wyświetlania wartości "tymczasowych" pomiarów (tzn. wykonanych narzędziami z menu _Info_) w oknach dialogowych, zamiast w linii komend (którą wyłączyłeś w poprzednim kroku).
+Zaznacz: `_View > Command Line_` - o ile nie jest już zaznaczone.
+
+=== Włącz wyświetlanie statusu "plottable" in Layer List
+
+Zaznacz: `_Edit > *Application Preferences* > Widgets > Layer List > Show plottable column`
 
 === Ściągnij pliki ramek
 
-Na dysku Twojgo komputera (np. w katalogu "_Dokumenty_" albo tam gdzie trzymasz swoje projekty) stwórz strukturę katalogów:
+Na dysku Twojego komputera (np. w katalogu "_Dokumenty_" albo tam gdzie trzymasz swoje projekty) stwórz strukturę katalogów:
 
-* _qcad_
-** _biblioteka_
-*** _ramki_
+```
+qcad
+└── biblioteka
+    └── ramki
+```
 
 Ściągnij następujące pliki, jeden po drugim, do tego nowo utworzonego katalogu "_ramki_":
 
@@ -173,7 +173,14 @@ Dodaj je teraz do biblioteki QCAD'a:
 
 === Ściągnij pliki szablonów rysunków
 
-Na dysku Twojgo komputera, w katalogu _qcad > biblioteka_ (stworzonym w powyższym kroku), utwórz katalog "_szablony_".
+Na dysku Twojgo komputera, w katalogu _qcad > biblioteka_ (stworzonym w powyższym kroku), utwórz katalog "_szablony_":
+```
+qcad
+└── biblioteka
+    ├── ramki
+    └── szablony
+```
+
 
 Ściągnij następujące pliki, jeden po drugim, do tego nowo utworzonego katalogu "_szablony_":
 
@@ -194,9 +201,10 @@ Zarejestruj pliki szablonów w QCAD'zie:
 
 === Zamknij domyślny, pusty rysunek
 
-W czasie uruchamiania, QCAD automatycznie tworzy pusty rysunek. Jeśli tak właśnie się stało, zamknij ten rysunek (bez zamykania samego programu):
+W czasie uruchamiania, QCAD automatycznie tworzy pusty rysunek. Jeśli tak właśnie się stało i masz go na ekranie, zamknij ten rysunek (bez zamykania samego programu):
+
 * `_File > Close_`
-* wybierz "_Close without Saving_".
+* wybierz "_Close without Saving_" (o ile program zapyta).
 
 === Stwórz nowy rysunek z szablonu
 
@@ -207,7 +215,7 @@ W czasie uruchamiania, QCAD automatycznie tworzy pusty rysunek. Jeśli tak wła�
 * Kliknij `_Create New Drawing_` aby stworzyć rysunek.
 
 === Warstwy
-Ściągnięte pliki zawierają kilka użytecznych, już skonfigurowanych warstw. Uzyj ich dla uproszczenia rysowania:
+Ściągnięte pliki zawierają kilka użytecznych, już skonfigurowanych warstw. Użyj ich dla uproszczenia rysowania:
 
 * `konstrukcja` - tu rysuj swój *model* - elementy stalowe, więźby, mury, etc.
 * `widoki` - tu umieszczaj widoki elementów *dla wydruku* (jak opisane w xref:#nowy-widok[])
@@ -250,7 +258,7 @@ Model to nie prezentacja. Precyzyjne rozmieszczanie elementów tak, aby wygląda
 === Pomocnicze wymiary, opisy i numeracja w modelu
 Wymiary i opisy przeznaczone _dla czytelnika rysunków_ xref:#prezentacja[będziemy umieszczać na papierze].
 
-To powiedziawszy, nieco komentarza, numeracja elementów lub kilka kluczowych wymiarów umieszczona w modelu może być użyteczna dla nas, jako rysowników, pomagając nam lepiej się orientować, zwłaszcza jeśli model jest skomplikowany.
+To powiedziawszy, nieco komentarza, numeracja elementów lub kilka kluczowych wymiarów umieszczona w modelu może być użyteczna dla nas, jako rysowników, pomagając nam lepiej się w nich orientować, zwłaszcza jeśli model jest skomplikowany.
 
 Jeśli chcesz takie pomocnicze elementy umieścić w modelu, pamiętaj, aby:
 
@@ -420,10 +428,16 @@ Program czeka teraz na wskazanie pozycji gdzie chcesz umieścić widok elementu.
 
 Jeśli potrzebujesz przesunąć widok w inne miejsce na stronie:
 
-* Zaznacz widok przez kliknięcie elementu przedstawionego w widoku.
-* To spowoduje wyświetlenie granatowych "uchwytów" - kwadratów w narożnikach i dwóch "kropek" wewnątrz obrysu.
-* "Złap" za środkową kropkę (wciśnij i przytrzymaj `LMB`) i pociągnij ją tam gdzie chcesz umieścić widok.
-* Puść `LMB`, żeby zakotwiczyć widok ("upuścić" go z powrotem na papier).
+* Wybierz strzałkę Pana Słodowego (image:img/arrow.png[]).
+* Zaznacz widok razem z towarzyszącymi mu wymiarami i opisami.
+* Przesuń zaznaczone obiekty, wciskając klawisze strzałek na klawiaturze. Możesz te klawisze wcisnąć i trzymać wciśnięte (jeden na raz), puszczając je dopiero gdy widok znajdzie się na właściwym miejscu.
+
+[NOTE]
+--
+Możesz również przesunąć zaznaczony widok "łapiąc" go myszą, klikając i "przytrzymując" którąś z linii, grot strzałki wymiarowej, albo którąś z liter. Możesz potrzebować powiększyć podgląd strony aby ułatwić sobie wcelowanie we właściwy element.
+
+W praktyce, nie zawsze się to "złapanie" myszą udaje. W takim przypadku metoda przesuwania podglądu przy użyciu strzałek na klawiaturze wydaje się najbardziej niezawodna (mimo, że może być nieco wolniejsza niż użycie myszy).
+--
 
 ===== Skoryguj skalę widoku
 
@@ -467,10 +481,11 @@ image::img/blacha_narozna_model_skos_guide_line.png[align=center]
 
 image::img/blacha_narozna_model_skos_guide_line_info_angle_clicks.png[align=center]
 
-* Miara kąta zostanie wyświetlona w oknie dialogowym z dużą precyzją (ta wyświetlona w modelu jest zwykle znacznie mniejsza). Zaznacz całą wartość numeryczną (tzn. bez symbolu stopni) i skopiuj ją do schowka (_Ctrl+C_):
+* Miara kąta zostanie wyświetlona na ekranie, ale również w lini komend w lewym, dolnym rogu ekranu. Ta w lini komend ma zwykle znacznie większą precyzję, niż ta na ekranie.
+* Zaznacz całą wartość numeryczną wyświetloną w lini komend (bez symbolu stopni) i skopiuj ją do schowka (_Ctrl+C_ albo `_RMB > Copy_`):
 
 .Wartość zmierzonego kąta
-image::img/info_angle_dialogue.png[align=center]
+image::img/info_angle_command_line.png[align=center]
 
 ===== Zacznij dodawać widok
 Zacznij dodawać widok jak opisano dla elementów poziomych w sekcji xref:nowy-widok-poziom-zacznij-dodawac[].
@@ -482,7 +497,7 @@ Gdy przejdziesz krok xref:#nowy-widok-nadaj-skale[], wróć tutaj i kontynuuj od
 
 W kroku xref:#nowy-widok-nadaj-skale[], obok pola _Scale_, mogłeś zauważyć pole _Rotation_.
 
-To drugie pole wyznacza kąt obrotu widoku. Kąt ten znaleźliśmy w kroku xref:kat-obrotu-widoku-znajdz[] i skopiowaliśmy do schowka.
+To pole wyznacza kąt obrotu widoku. Kąt ten znaleźliśmy w kroku xref:kat-obrotu-widoku-znajdz[] i skopiowaliśmy do schowka.
 
 Wklej tę skopiowaną wartość kąta w polu _Rotation_:
 
@@ -500,7 +515,7 @@ Tym razem, prostokąt obrysu wyświetlany w modelu będzie zorientowany po skosi
 .Obrys widoku - prawidłowy
 image::img/paste_viewport_outline_correct.png[align=center]
 
-Krawędź obrysu musi być równoległa do tej krawędzi elementu, dla której zmierzyliśmy kąt obrotu. Jeśli nie jest ona równoległa, podaj wartość kąta obrotu jako ujemną w polu _Rotation_ (poprzedź ją znakiem minus).
+Krawędź obrysu musi być równoległa do tej krawędzi elementu, dla której zmierzyliśmy kąt obrotu. Jeśli nie jest ona równoległa, podaj wartość kąta obrotu w polu _Rotation_ jako _ujemną_ (poprzedź ją znakiem minus).
 
 .Obrys widoku — nieprawidłowy
 image::img/paste_viewport_outline_incorrect.png[align=center]

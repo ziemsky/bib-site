@@ -467,10 +467,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#_ustaw_kolor_wydruku">2.3. Ustaw kolor wydruku</a></li>
 <li><a href="#_wyłącz_wyświetlanie_niedrukowalnych_warstw_w_podglądzie_wydruku">2.4. Wyłącz wyświetlanie "niedrukowalnych" warstw w podglądzie wydruku</a></li>
-<li><a href="#_wyłącz_linię_komend">2.5. Wyłącz linię komend</a></li>
-<li><a href="#_włącz_wyświetlanie_pomiarów_w_oknie_dialogu">2.6. Włącz wyświetlanie pomiarów w oknie dialogu</a></li>
-<li><a href="#_ściągnij_pliki_ramek">2.7. Ściągnij pliki ramek</a></li>
-<li><a href="#_ściągnij_pliki_szablonów_rysunków">2.8. Ściągnij pliki szablonów rysunków</a></li>
+<li><a href="#_włącz_wyświetlanie_pomiarów_w_linii_komend">2.5. Włącz wyświetlanie pomiarów w linii komend</a></li>
+<li><a href="#_włącz_linię_komend">2.6. Włącz linię komend</a></li>
+<li><a href="#_włącz_wyświetlanie_statusu_plottable_in_layer_list">2.7. Włącz wyświetlanie statusu "plottable" in Layer List</a></li>
+<li><a href="#_ściągnij_pliki_ramek">2.8. Ściągnij pliki ramek</a></li>
+<li><a href="#_ściągnij_pliki_szablonów_rysunków">2.9. Ściągnij pliki szablonów rysunków</a></li>
 </ul>
 </li>
 <li><a href="#nowy-rysunek">3. Stwórz nowy rysunek</a>
@@ -752,82 +753,57 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect3">
 <h4 id="_wyłącz_automatyczne_przyciąganie_do_punktów_siatki">2.2.2. Wyłącz automatyczne przyciąganie do punktów siatki</h4>
 <div class="paragraph">
-<p>Odznacz: <code><em>Edit &gt; Application Preferences &gt; Snap &gt; Auto snap</em> &gt; <em>Grid points</em></code></p>
+<p>Odznacz: <code><em>Edit &gt; <strong>Application Preferences</strong> &gt; Snap &gt; Auto snap</em> &gt; <em>Grid points</em></code></p>
 </div>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_ustaw_kolor_wydruku">2.3. Ustaw kolor wydruku</h3>
 <div class="paragraph">
-<p>Zaznacz: <code><em>Edit &gt; Application Preferences &gt; Default for New Drawings &gt; Printing - Colors</em> &gt; <em>Black / white</em></code></p>
+<p>Zaznacz: <code><em>Edit &gt; <strong>Application Preferences</strong> &gt; Default for New Drawings &gt; Printing - Colors</em> &gt; <em>Black / white</em></code></p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_wyłącz_wyświetlanie_niedrukowalnych_warstw_w_podglądzie_wydruku">2.4. Wyłącz wyświetlanie "niedrukowalnych" warstw w podglądzie wydruku</h3>
 <div class="paragraph">
-<p>Zaznacz: <code><em>Edit &gt; Application Preferences &gt; File &gt; Print Preview</em> &gt; <em>Show only plottable layers</em></code></p>
+<p>Zaznacz: <code><em>Edit &gt; <strong>Application Preferences</strong> &gt; File &gt; Print Preview</em> &gt; <em>Show only plottable layers</em></code></p>
 </div>
 <div class="paragraph">
 <p><a href="#niedrukowalna-warstwa">Co to jest drukowalna i niedrukowalna warstwa?</a></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_wyłącz_linię_komend">2.5. Wyłącz linię komend</h3>
+<h3 id="_włącz_wyświetlanie_pomiarów_w_linii_komend">2.5. Włącz wyświetlanie pomiarów w linii komend</h3>
 <div class="paragraph">
-<p>Odznacz: <code><em>View &gt; Command Line</em></code></p>
+<p>Odznacz: <code><em>Edit &gt; <strong>Application Preferences</strong> &gt; Widgets &gt; Command Line &gt; Show information as dialog</em></code></p>
 </div>
-<details>
-<summary class="title">Dlaczego?</summary>
+<div class="paragraph">
+<p>Odznacz: <code><em>Edit &gt; <strong>Application Preferences</strong> &gt; Widgets &gt; Command Line &gt; Show warnings as dialog</em></code></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_włącz_linię_komend">2.6. Włącz linię komend</h3>
+<div class="paragraph">
+<p>Zaznacz: <code><em>View &gt; Command Line</em></code> - o ile nie jest już zaznaczone.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_włącz_wyświetlanie_statusu_plottable_in_layer_list">2.7. Włącz wyświetlanie statusu "plottable" in Layer List</h3>
+<div class="paragraph">
+<p>Zaznacz: <code>_Edit &gt; <strong>Application Preferences</strong> &gt; Widgets &gt; Layer List &gt; Show plottable column</code></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ściągnij_pliki_ramek">2.8. Ściągnij pliki ramek</h3>
+<div class="paragraph">
+<p>Na dysku Twojego komputera (np. w katalogu "<em>Dokumenty</em>" albo tam gdzie trzymasz swoje projekty) stwórz strukturę katalogów:</p>
+</div>
+<div class="listingblock">
 <div class="content">
-<div class="paragraph">
-<p>Linia komend jest użyteczna jako mechanizm szybszego wydawania komend, ale wymaga częstszego użycia klawiatury. Jako że ten przewodnik ogranicza użycia klawiatury do absolutnego minimum, wyłącz linię komend dla zaoszczędzenia miejsca na ekranie i zredukowania "wizualnego hałasu".</p>
+<pre class="CodeRay highlight"><code>qcad
+└── biblioteka
+    └── ramki</code></pre>
 </div>
-</div>
-</details>
-</div>
-<div class="sect2">
-<h3 id="_włącz_wyświetlanie_pomiarów_w_oknie_dialogu">2.6. Włącz wyświetlanie pomiarów w oknie dialogu</h3>
-<div class="paragraph">
-<p>Zaznacz: <code><em>Edit &gt; Application Preferences &gt; Widgets &gt; Command Line &gt; Show information as dialog</em></code></p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Note</div>
-</td>
-<td class="content">
-To spowoduje wyświetlania wartości "tymczasowych" pomiarów (tzn. wykonanych narzędziami z menu <em>Info</em>) w oknach dialogowych, zamiast w linii komend (którą wyłączyłeś w poprzednim kroku).
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_ściągnij_pliki_ramek">2.7. Ściągnij pliki ramek</h3>
-<div class="paragraph">
-<p>Na dysku Twojgo komputera (np. w katalogu "<em>Dokumenty</em>" albo tam gdzie trzymasz swoje projekty) stwórz strukturę katalogów:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><em>qcad</em></p>
-<div class="ulist">
-<ul>
-<li>
-<p><em>biblioteka</em></p>
-<div class="ulist">
-<ul>
-<li>
-<p><em>ramki</em></p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</li>
-</ul>
 </div>
 <div class="paragraph">
 <p>Ściągnij następujące pliki, jeden po drugim, do tego nowo utworzonego katalogu "<em>ramki</em>":</p>
@@ -899,9 +875,17 @@ To spowoduje wyświetlania wartości "tymczasowych" pomiarów (tzn. wykonanych n
 </div>
 </div>
 <div class="sect2">
-<h3 id="_ściągnij_pliki_szablonów_rysunków">2.8. Ściągnij pliki szablonów rysunków</h3>
+<h3 id="_ściągnij_pliki_szablonów_rysunków">2.9. Ściągnij pliki szablonów rysunków</h3>
 <div class="paragraph">
-<p>Na dysku Twojgo komputera, w katalogu <em>qcad &gt; biblioteka</em> (stworzonym w powyższym kroku), utwórz katalog "<em>szablony</em>".</p>
+<p>Na dysku Twojgo komputera, w katalogu <em>qcad &gt; biblioteka</em> (stworzonym w powyższym kroku), utwórz katalog "<em>szablony</em>":</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code>qcad
+└── biblioteka
+    ├── ramki
+    └── szablony</code></pre>
+</div>
 </div>
 <div class="paragraph">
 <p>Ściągnij następujące pliki, jeden po drugim, do tego nowo utworzonego katalogu "<em>szablony</em>":</p>
@@ -950,9 +934,17 @@ To spowoduje wyświetlania wartości "tymczasowych" pomiarów (tzn. wykonanych n
 <div class="sect2">
 <h3 id="_zamknij_domyślny_pusty_rysunek">3.1. Zamknij domyślny, pusty rysunek</h3>
 <div class="paragraph">
-<p>W czasie uruchamiania, QCAD automatycznie tworzy pusty rysunek. Jeśli tak właśnie się stało, zamknij ten rysunek (bez zamykania samego programu):
-* <code><em>File &gt; Close</em></code>
-* wybierz "<em>Close without Saving</em>".</p>
+<p>W czasie uruchamiania, QCAD automatycznie tworzy pusty rysunek. Jeśli tak właśnie się stało i masz go na ekranie, zamknij ten rysunek (bez zamykania samego programu):</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code><em>File &gt; Close</em></code></p>
+</li>
+<li>
+<p>wybierz "<em>Close without Saving</em>" (o ile program zapyta).</p>
+</li>
+</ul>
 </div>
 </div>
 <div class="sect2">
@@ -984,7 +976,7 @@ To spowoduje wyświetlania wartości "tymczasowych" pomiarów (tzn. wykonanych n
 <div class="sect2">
 <h3 id="_warstwy">3.3. Warstwy</h3>
 <div class="paragraph">
-<p>Ściągnięte pliki zawierają kilka użytecznych, już skonfigurowanych warstw. Uzyj ich dla uproszczenia rysowania:</p>
+<p>Ściągnięte pliki zawierają kilka użytecznych, już skonfigurowanych warstw. Użyj ich dla uproszczenia rysowania:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1072,7 +1064,7 @@ W zależności który z "bazowych" plików ściągnąłeś w poprzednim kroku, m
 <p>Wymiary i opisy przeznaczone <em>dla czytelnika rysunków</em> <a href="#prezentacja">będziemy umieszczać na papierze</a>.</p>
 </div>
 <div class="paragraph">
-<p>To powiedziawszy, nieco komentarza, numeracja elementów lub kilka kluczowych wymiarów umieszczona w modelu może być użyteczna dla nas, jako rysowników, pomagając nam lepiej się orientować, zwłaszcza jeśli model jest skomplikowany.</p>
+<p>To powiedziawszy, nieco komentarza, numeracja elementów lub kilka kluczowych wymiarów umieszczona w modelu może być użyteczna dla nas, jako rysowników, pomagając nam lepiej się w nich orientować, zwłaszcza jeśli model jest skomplikowany.</p>
 </div>
 <div class="paragraph">
 <p>Jeśli chcesz takie pomocnicze elementy umieścić w modelu, pamiętaj, aby:</p>
@@ -1443,18 +1435,32 @@ Pamiętaj, że możesz przesuwać, pomniejszać i powiększać podgląd modelu, 
 <div class="ulist">
 <ul>
 <li>
-<p>Zaznacz widok przez kliknięcie elementu przedstawionego w widoku.</p>
+<p>Wybierz strzałkę Pana Słodowego (<span class="image"><img src="img/arrow.png" alt="arrow"></span>).</p>
 </li>
 <li>
-<p>To spowoduje wyświetlenie granatowych "uchwytów" - kwadratów w narożnikach i dwóch "kropek" wewnątrz obrysu.</p>
+<p>Zaznacz widok razem z towarzyszącymi mu wymiarami i opisami.</p>
 </li>
 <li>
-<p>"Złap" za środkową kropkę (wciśnij i przytrzymaj <code>LMB</code>) i pociągnij ją tam gdzie chcesz umieścić widok.</p>
-</li>
-<li>
-<p>Puść <code>LMB</code>, żeby zakotwiczyć widok ("upuścić" go z powrotem na papier).</p>
+<p>Przesuń zaznaczone obiekty, wciskając klawisze strzałek na klawiaturze. Możesz te klawisze wcisnąć i trzymać wciśnięte (jeden na raz), puszczając je dopiero gdy widok znajdzie się na właściwym miejscu.</p>
 </li>
 </ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Możesz również przesunąć zaznaczony widok "łapiąc" go myszą, klikając i "przytrzymując" którąś z linii, grot strzałki wymiarowej, albo którąś z liter. Możesz potrzebować powiększyć podgląd strony aby ułatwić sobie wcelowanie we właściwy element.</p>
+</div>
+<div class="paragraph">
+<p>W praktyce, nie zawsze się to "złapanie" myszą udaje. W takim przypadku metoda przesuwania podglądu przy użyciu strzałek na klawiaturze wydaje się najbardziej niezawodna (mimo, że może być nieco wolniejsza niż użycie myszy).</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 </div>
 <div class="sect4">
@@ -1549,13 +1555,16 @@ Pamiętaj, że możesz przesuwać, pomniejszać i powiększać podgląd modelu, 
 <div class="ulist">
 <ul>
 <li>
-<p>Miara kąta zostanie wyświetlona w oknie dialogowym z dużą precyzją (ta wyświetlona w modelu jest zwykle znacznie mniejsza). Zaznacz całą wartość numeryczną (tzn. bez symbolu stopni) i skopiuj ją do schowka (<em>Ctrl+C</em>):</p>
+<p>Miara kąta zostanie wyświetlona na ekranie, ale również w lini komend w lewym, dolnym rogu ekranu. Ta w lini komend ma zwykle znacznie większą precyzję, niż ta na ekranie.</p>
+</li>
+<li>
+<p>Zaznacz całą wartość numeryczną wyświetloną w lini komend (bez symbolu stopni) i skopiuj ją do schowka (<em>Ctrl+C</em> albo <code><em>RMB &gt; Copy</em></code>):</p>
 </li>
 </ul>
 </div>
 <div class="imageblock text-center">
 <div class="content">
-<img src="img/info_angle_dialogue.png" alt="info angle dialogue">
+<img src="img/info_angle_command_line.png" alt="info angle command line">
 </div>
 <div class="title">Figure 13. Wartość zmierzonego kąta</div>
 </div>
@@ -1575,7 +1584,7 @@ Pamiętaj, że możesz przesuwać, pomniejszać i powiększać podgląd modelu, 
 <p>W kroku <a href="#nowy-widok-nadaj-skale">Nadaj widokowi skalę</a>, obok pola <em>Scale</em>, mogłeś zauważyć pole <em>Rotation</em>.</p>
 </div>
 <div class="paragraph">
-<p>To drugie pole wyznacza kąt obrotu widoku. Kąt ten znaleźliśmy w kroku <a href="#kat-obrotu-widoku-znajdz">Znajdź kąt obrotu widoku</a> i skopiowaliśmy do schowka.</p>
+<p>To pole wyznacza kąt obrotu widoku. Kąt ten znaleźliśmy w kroku <a href="#kat-obrotu-widoku-znajdz">Znajdź kąt obrotu widoku</a> i skopiowaliśmy do schowka.</p>
 </div>
 <div class="paragraph">
 <p>Wklej tę skopiowaną wartość kąta w polu <em>Rotation</em>:</p>
@@ -1604,7 +1613,7 @@ Pamiętaj, że możesz przesuwać, pomniejszać i powiększać podgląd modelu, 
 <div class="title">Figure 14. Obrys widoku - prawidłowy</div>
 </div>
 <div class="paragraph">
-<p>Krawędź obrysu musi być równoległa do tej krawędzi elementu, dla której zmierzyliśmy kąt obrotu. Jeśli nie jest ona równoległa, podaj wartość kąta obrotu jako ujemną w polu <em>Rotation</em> (poprzedź ją znakiem minus).</p>
+<p>Krawędź obrysu musi być równoległa do tej krawędzi elementu, dla której zmierzyliśmy kąt obrotu. Jeśli nie jest ona równoległa, podaj wartość kąta obrotu w polu <em>Rotation</em> jako <em>ujemną</em> (poprzedź ją znakiem minus).</p>
 </div>
 <div class="imageblock text-center">
 <div class="content">
@@ -1680,7 +1689,7 @@ Pamiętaj, że możesz przesuwać, pomniejszać i powiększać podgląd modelu, 
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-09-11 14:47:15 +0100
+Last updated 2022-09-12 19:48:24 +0100
 </div>
 </div>
 </body>
