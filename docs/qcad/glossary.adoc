@@ -1,4 +1,19 @@
+[#glossary]
 == Słownik pojęć
 
-[#niedrukowalna-warstwa]
+Objaśnienia kluczowych terminów użytych w niniejszym przewodniku:
+
+[#def-niedrukowalna-warstwa]
 Warstwa drukowalna/niedrukowalna:: (ang: _plottable layers_) Warstwy domyślnie są drukowalne, tzn. należące do nich obiekty są widoczne w podglądzie wydruku (o ile warstwa jest włączona) i drukowane na papierze. Warstwę można uczynić "niedrukowalną" przez wyłączeniu jej parametru _Plottable_. Obiekty do takiej warstwy nie będą widoczne na podglądzie wydruku (nawet jeśli warstwa jest włączona) ani nie będą drukowane na papierze. Aliści, o ile niedrukowalna warstwa jest włączona jej obiekty będą widoczne w modelu.
+
+[#def-blok]
+Blok (zwykły):: (ang: _block_) Zespół elementów zebranych razem pod wspólną nazwą (linie, teksty, wymiary, a nawet inne bloki). Bloki tworzy się wtedy gdy ten sam zespół elementów trzeba przedstawić na rysunku więcej niż raz. "Definicja" bloku jest zawarta w panelu "_Block List_" skąd może być wklejana w pożądane miejsca rysunku (zarówno w przestrzeni modelu jak i paperu). Zmiany w definicji bloku są odzwierciedlane we wszystkich jego kopiach. Aby przerwać to połączenie, kopia może zostać "rozbita" na elementy składowe (`_Block > Explode_`).
+
+[#def-layout-block]
+Layout Block:: Definicja pojedynczego rysunku. QCAD umieszcza taką definicję jako jeden z elementów "_Paper Space_" w panelu _Block List_ obok xref:#def-blok[zwykłych bloków]. Jest to dyskusyjny wybór, jako że przy większej liczbie rysunków i bloków ta lista staje się mniej czytelna.
+
+[#def-projekt]
+Projekt:: Pojedynczy plik QCAD'a. Taki plik zawiera jeden model (representowany przez blok "_Model Space_" w panelu _Block List_) i jeden lub więcej rysunków (reprezentowanych przez elementy "_Paper Space_" w panelu _Block List_ obok xref:#def-blok[zwykłych bloków]).
+
+[#def-rysunek]
+Rysunek:: Pojedyncza strona w xref:def-projekt[projekcie QCAD'a], reprezentowana przez pojedynczy xref:def-layout-block[Layout Block] w panelu _Block List_. Zwykle z ramką i tabliczką. W projekcie często jest więcej niż jeden rysunek. Niniejszy przewodnik zakłada, że jeden rysunek jest drukowany na jednym arkuszu papieru, ale QCAD ma funkcję drukowania jednego, większego rysunku na zestawie mniejszych kartek/arkuszy papieru.

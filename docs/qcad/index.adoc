@@ -14,6 +14,14 @@ Podane procedury skupiają się na użyciu myszy, ograniczając użycie klawiatu
 
 === Konwencje
 
+==== Terminologia
+
+QCAD używa słowa "Drawing" na określenie tego, co niniejszy przewodnik nazywa "projektem", czyli pojedynczy plik/dokument QCAD'a.
+
+Słowo "rysunek" (ang: _drawing_), przewodnik rezerwuje dla pojedynczego rysunku, czy też pojedynczej "strony", zwykle z własną ramką i tabliczką.
+
+Dla bardziej szczegółowych wyjaśnień, zobacz sekcję xref:#glossary[].
+
 ==== Ścieżki dostępu
 Narzędzia dostępne w programie można wybrać na wiele sposobów. Na przykład, to samo narzędzie można wybrać z menu tekstowego lub klikając ikonę na palecie narzędzi. W większości przypadków, dla uproszczenia i jednoznaczności komunikacji niniejszy przewodnik ogranicza się do wybierania narzędzi z menu tekstowego.
 
@@ -24,14 +32,14 @@ Dotarcie do właściwego narzędzia, opcji lub komendy zwykle wymaga kilku krok�
 Niektóre z członów ścieżki mogą się odnosić do tekstowych menu, a inne do opcji lub pól w oknach dialogowych. Powyższa, przykładowa ścieżka pozwala na znalezienie pola do ustawienia systemu miar. Jest ona zilustrowana na zrzucie ekranu poniżej; zauważ jak segmenty ścieżki korespondują do elementów zaznaczonych na poniższej ilustracji:
 
 .Przykładowa ścieżka dostępu
-image::img/tool_selection_paths.png[Przykładowa ścieżka dostępu - ilustracja, align=center]
+image::img/tool_selection_paths.png[Przykładowa ścieżka dostępu — ilustracja, align=center]
 
 Ta konwencja jest używana gdzie jest to tylko możliwe. Tylko w miejscach gdzie jest ona niewystarczająca przewodnik ucieka się do zrzutów ekranu.
 
 Pierwszy człon ścieżki może wskazywać:
 
-* jedno z "menu" wymienionych na liście na górze okna (np. "_Edit_" na ilustracji powyżej),
-* albo jeden z "kluczowych paneli" po prawej stronie ekranu (np. "_Block List_" na poniższej ilustracji):
+* jedno z "menu" wymienionych na liście na górze okna (np. _Edit_ na ilustracji powyżej),
+* albo jeden z "kluczowych paneli" po prawej stronie ekranu (np. _Block List_ na poniższej ilustracji):
 
 image::img/key_panels_all_overlapping.png[align=center]
 
@@ -49,7 +57,7 @@ Rozdział xref:#kluczowe-panele[Włącz kluczowe panele] opisuje jak je włączy
 
 W wielu oknach dialogowych przewodnik rekomenduje zmianę pewnych pól, ale ignoruje inne, które mogą być w danym oknie obecne.
 
-W takim przypadku pozostaw the "niewymienione" pola jak są  - chyba, że już je znasz i wiesz jakie są ich funkcje i konsekwencje zmiany ich wartości.
+W takim przypadku pozostaw the "niewymienione" pola jak są  — chyba, że już je znasz i wiesz jakie są ich funkcje i konsekwencje zmiany ich wartości.
 
 === Proces rysowania
 
@@ -66,7 +74,7 @@ Każda z tych faz opisana jest w indywidualnych rozdziałach poniżej.
 [#wstepna-konfiguracja-programu]
 == Skonfiguruj QCAD'a
 
-Instrukcje w tej sekcji zwykle wystarczy wykonać tylko raz, jako że ustawiają one konfigurację całego programu i dla wszystkich nowo tworzonych rysunków. Może się zdarzyć, że po re-instalacji lub po instalacji nowszej wersji programu, niektóre z ustawień trzeba będzie przejrzeć i powtórzyć.
+Instrukcje w tej sekcji zwykle wystarczy wykonać tylko raz, jako że ustawiają one konfigurację całego programu i dla wszystkich nowo tworzonych projektów. Może się zdarzyć, że po re-instalacji lub po instalacji nowszej wersji programu, niektóre z ustawień trzeba będzie przejrzeć i powtórzyć.
 
 [#kluczowe-panele]
 === Włącz kluczowe panele
@@ -77,9 +85,9 @@ Upewnij się, że powyższe opcje są zaznaczone/aktywne:
 * `_View > Property Editor_`
 * `_View > Library Browser_`
 
-Gdy te opcje są zaznaczone, korespondujące panele powinny być widoczne po prawej stronie ekranu, wyglądając podobnie jak na poniższych ilustracjach.
+Gdy te opcje są _zaznaczone_, korespondujące panele powinny być widoczne po prawej stronie ekranu, wyglądając podobnie jak na poniższych ilustracjach.
 
-Zauważ, że rozmieszczenie paneli i ich "zakładek" różni się między dwiema ilustracjami. Wynika to z tego, że to rozmieszczenie można zmieniać, tak aby dostęp do nich był najwygodniejszy:
+Zauważ, że to rozmieszczenie można zmieniać, tak aby dostęp do nich był najwygodniejszy:
 
 [cols="a,a", frame=none, grid=none]
 |===
@@ -91,7 +99,7 @@ image::img/key_panels_property_editor_separate.png[]
 
 Możesz zmieniać kolejność pionowych zakładek "łapiąc" i przesuwając je kursorem myszy.
 
-Pdobnie, łapiąc i przesuwając poziomo zorientowane tytuły paneli, możesz zmienić lokację tych paneli.
+Podobnie, łapiąc i przesuwając poziomo zorientowane tytuły paneli, możesz zmienić lokację tych paneli.
 
 === Wyłącz siatkę
 
@@ -116,12 +124,15 @@ Wyłączenie siatki w tym miejscu spowoduje, że nie będzie ona widoczna w _now
 Odznacz: `_Edit > *Application Preferences* > Snap > Auto snap_ > _Grid points_`
 
 === Ustaw kolor wydruku
-Zaznacz: `_Edit > *Application Preferences* > Default for New Drawings > Printing - Colors_ > _Black / white_`
+Zaznacz: `_Edit > *Application Preferences* > Default for New Drawings > Printing — Colors_ > _Black / white_`
 
 === Wyłącz wyświetlanie "niedrukowalnych" warstw w podglądzie wydruku
 Zaznacz: `_Edit > *Application Preferences* > File > Print Preview_ > _Show only plottable layers_`
 
-xref:#niedrukowalna-warstwa[Co to jest drukowalna i niedrukowalna warstwa?]
+=== Włącz podgląd wydruku automatycznie przy wchodzeniu w przestrzeń papieru
+Zaznacz: `_Edit > *Application Preferences* > File > Print Preview_ > _Automatically switch print preview on for layout blocks_`
+
+xref:#def-niedrukowalna-warstwa[Co to jest drukowalna i niedrukowalna warstwa?]
 
 === Włącz wyświetlanie pomiarów w linii komend
 
@@ -131,15 +142,18 @@ Odznacz: `_Edit > *Application Preferences* > Widgets > Command Line > Show warn
 
 === Włącz linię komend
 
-Zaznacz: `_View > Command Line_` - o ile nie jest już zaznaczone.
+Zaznacz: `_View > Command Line_` — o ile nie jest już zaznaczone.
 
 === Włącz wyświetlanie statusu "plottable" in Layer List
 
 Zaznacz: `_Edit > *Application Preferences* > Widgets > Layer List > Show plottable column`
 
+=== Włącz wyświetlanie biblioteki jako listę
+W menu `_Edit > *Application Preferences* > Widgets > Library Browser > View mode` wybierz _List_.
+
 === Ściągnij pliki ramek
 
-Na dysku Twojego komputera (np. w katalogu "_Dokumenty_" albo tam gdzie trzymasz swoje projekty) stwórz strukturę katalogów:
+Na dysku Twojego komputera (np. w katalogu _Dokumenty_ albo tam gdzie trzymasz swoje projekty) stwórz strukturę katalogów:
 
 ```
 qcad
@@ -147,33 +161,33 @@ qcad
     └── ramki
 ```
 
-Ściągnij następujące pliki, jeden po drugim, do tego nowo utworzonego katalogu "_ramki_":
+Ściągnij następujące pliki, jeden po drugim, do tego nowo utworzonego katalogu _ramki_:
 
-* xref:drawings/ramki/A0 pion.dxf[A0 pion.dxf]
-* xref:drawings/ramki/A0 poziom.dxf[A0 poziom.dxf]
-* xref:drawings/ramki/A1 pion.dxf[A1 pion.dxf]
-* xref:drawings/ramki/A1 poziom.dxf[A1 poziom.dxf]
-* xref:drawings/ramki/A2 pion.dxf[A2 pion.dxf]
-* xref:drawings/ramki/A2 poziom.dxf[A2 poziom.dxf]
-* xref:drawings/ramki/A3 pion.dxf[A3 pion.dxf]
-* xref:drawings/ramki/A3 poziom.dxf[A3 poziom.dxf]
-* xref:drawings/ramki/A4 pion.dxf[A4 pion.dxf]
-* xref:drawings/ramki/A4 poziom.dxf[A4 poziom.dxf]
-* xref:drawings/ramki/A4 poziom obrocona.dxf[A4 poziom obrocona.dxf]
-* xref:drawings/ramki/tabliczka.dxf[tabliczka.dxf]
+* xref:drawings/ramki/ramka A0 pion.dxf[ramka A0 pion.dxf]
+* xref:drawings/ramki/ramka A0 poziom.dxf[ramka A0 poziom.dxf]
+* xref:drawings/ramki/ramka A1 pion.dxf[ramka A1 pion.dxf]
+* xref:drawings/ramki/ramka A1 poziom.dxf[ramka A1 poziom.dxf]
+* xref:drawings/ramki/ramka A2 pion.dxf[ramka A2 pion.dxf]
+* xref:drawings/ramki/ramka A2 poziom.dxf[ramka A2 poziom.dxf]
+* xref:drawings/ramki/ramka A3 pion.dxf[ramka A3 pion.dxf]
+* xref:drawings/ramki/ramka A3 poziom.dxf[ramka A3 poziom.dxf]
+* xref:drawings/ramki/ramka A4 pion.dxf[ramka A4 pion.dxf]
+* xref:drawings/ramki/ramka A4 poziom.dxf[ramka A4 poziom.dxf]
+* xref:drawings/ramki/ramka A4 poziom obrocona.dxf[ramka A4 poziom obrocona.dxf]
+* xref:drawings/ramki/tabliczka 120x40.dxf[tabliczka 120x40.dxf]
 
 Dodaj je teraz do biblioteki QCAD'a:
 
 * Otwórz: `_Edit > *Application Preferences* > Widgets > Library Browser > Library Sources_`
 * W panelu _Library Sources_ kliknij _Add_
-* W oknie dialogowym, które się pojawi, znajdź i wejdź do katalogu "_ramki_" utworzonego powyżej.
+* W oknie dialogowym, które się pojawi, znajdź i wejdź do katalogu _ramki_ utworzonego powyżej.
 * Kliknij _Choose_ aby zatwierdzić wybór.
 * Kliknij _OK_ aby zatwierdzić zmiany ustawień.
 * Zamknij i otwórz QCAD'a.
 
 === Ściągnij pliki szablonów rysunków
 
-Na dysku Twojgo komputera, w katalogu _qcad > biblioteka_ (stworzonym w powyższym kroku), utwórz katalog "_szablony_":
+Na dysku Twojgo komputera, w katalogu _qcad > biblioteka_ (stworzonym w powyższym kroku), utwórz katalog _szablony_:
 ```
 qcad
 └── biblioteka
@@ -182,7 +196,7 @@ qcad
 ```
 
 
-Ściągnij następujące pliki, jeden po drugim, do tego nowo utworzonego katalogu "_szablony_":
+Ściągnij następujące pliki, jeden po drugim, do tego nowo utworzonego katalogu _szablony_:
 
 * xref:drawings/szablony/rysunek qcad - wymiary w milimetrach.dxf[rysunek qcad - wymiary w milimetrach.dxf]
 * xref:drawings/szablony/rysunek qcad - wymiary w centymetrach.dxf[rysunek qcad - wymiary w centymetrach.dxf]
@@ -191,7 +205,7 @@ Zarejestruj pliki szablonów w QCAD'zie:
 
 * Otwórz: `_Edit > *Application Preferences* > File > Templates_`
 * W panelu _File: Templates_ kliknij _Add_
-* W oknie dialogowym, które się pojawi, znajdź i wejdź do katalogu "_szablony_" utworzonego powyżej.
+* W oknie dialogowym, które się pojawi, znajdź i wejdź do katalogu _szablony_ utworzonego powyżej.
 * Kliknij _Choose_ aby zatwierdzić wybór.
 * Kliknij _OK_ aby zatwierdzić zmiany ustawień.
 * Zamknij i otwórz QCAD'a.
@@ -204,23 +218,23 @@ Zarejestruj pliki szablonów w QCAD'zie:
 W czasie uruchamiania, QCAD automatycznie tworzy pusty rysunek. Jeśli tak właśnie się stało i masz go na ekranie, zamknij ten rysunek (bez zamykania samego programu):
 
 * `_File > Close_`
-* wybierz "_Close without Saving_" (o ile program zapyta).
+* wybierz _Close without Saving_ (o ile program zapyta).
 
 === Stwórz nowy rysunek z szablonu
 
 * `_File > New from Template..._`
 * Wybierz szablon, klikając jeden z poniższych szablonów:
-** "_rysunek qcad - wymiary w milimetrach_" - dla rysunków stali
-** "_rysunek qcad - wymiary w centymetrach_" - dla rysunków obiektów murowanych i drewnianych
+** _rysunek qcad - wymiary w milimetrach_ — dla rysunków stali
+** _rysunek qcad - wymiary w centymetrach_ — dla rysunków obiektów murowanych i drewnianych
 * Kliknij `_Create New Drawing_` aby stworzyć rysunek.
 
 === Warstwy
 Ściągnięte pliki zawierają kilka użytecznych, już skonfigurowanych warstw. Użyj ich dla uproszczenia rysowania:
 
-* `konstrukcja` - tu rysuj swój *model* - elementy stalowe, więźby, mury, etc.
-* `widoki` - tu umieszczaj widoki elementów *dla wydruku* (jak opisane w xref:#nowy-widok[])
-* `wymiary opisy (model)` - tu umieszczaj pomocnicze opisy i wymiary, które powinny być *widoczne tylko w modelu*, a które nie powinny być drukowane na papierze. Innymi słowy, są to elementy, które służą Tobie, jako rysownikowi, ale które nie powinny być uwidocznione czytelnikowi rysunku.
-* `wymiary opisy (papier)` - tu umieszczaj opisy i wymiary, które powinny być *drukowane na papierze*.
+* `konstrukcja` — tu rysuj swój *model* — elementy stalowe, więźby, mury, etc.
+* `widoki` — tu umieszczaj widoki elementów *dla wydruku* (jak opisane w xref:#widok-nowy[])
+* `wymiary opisy (model)` — na tej warstwie umieszczaj pomocnicze opisy i wymiary, które powinny być *widoczne tylko w modelu*, a które nie powinny być drukowane na papierze. Innymi słowy, są to elementy, które służą Tobie, jako rysownikowi, ale które nie powinny być uwidocznione czytelnikowi rysunku.
+* `wymiary opisy (papier)` — przeznaczona dla opisów i wymiarów, które powinny być *drukowane na papierze*.
 
 [#model]
 == Narysuj model
@@ -262,7 +276,7 @@ To powiedziawszy, nieco komentarza, numeracja elementów lub kilka kluczowych wy
 
 Jeśli chcesz takie pomocnicze elementy umieścić w modelu, pamiętaj, aby:
 
-* umieszczać je na xref:#niedrukowalna-warstwa[niedrukowalnej warstwie] "_wymiary opisy (model)_",
+* umieszczać je na xref:#def-niedrukowalna-warstwa[niedrukowalnej warstwie] _wymiary opisy (model)_,
 * nadawać im duży rozmiar czcionek (w modelu używamy skali 1:1, na papierze zwykle jest to skala znacznie większa, więc czcionki w rozmiarze dobrze wyglądającym na papierze są nieczytelnie małe w modelu).
 
 [#prezentacja]
@@ -272,18 +286,18 @@ Innymi słowy: przygotuj prezentację. Dopiero tutaj będziemy myśleć o skali,
 === Stwórz nową stronę
 `_Block > Add Layout Block_`:
 
-* Nazwij nową stronę w polu _Layout name_, np. "02 - rygiel 1", albo "03 - słup 2".
+* Nazwij nową stronę w polu _Layout name_, np. "_02 - rygiel 1_", albo "_03 - słup 2_".
 * Zignoruj pole _Order_.
 
-[#przestrzen-papieru-nowa-strona]
-=== Wejdź w "przestrzeń papieru" nowej strony
+[#przestrzen-papieru-biezaca-strona]
+=== Wejdź w "przestrzeń papieru" bieżącej strony
 
-Upewnij się, że nowo utworzona strona jest aktywna w panelu _Block List_ (ma wyświetloną ikonę ołówka). Jeśli nie jest, kliknij jej nazwę dwa razy:
+Upewnij się, że bieżąca strona jest aktywna w panelu _Block List_ (ma wyświetloną ikonę ołówka). Jeśli nie jest, kliknij jej nazwę dwa razy:
 
-.Nowa strona jest aktywna
+.Bieżąca strona jest aktywna
 image::img/presentation_current_page_selection.png[align=center]
 
-To automatycznie włącza podgląd wydruku. W tej chwili strona może jeszcze nie być widoczna na ekranie - naprawimy to za moment.
+To automatycznie włącza podgląd wydruku. W tej chwili strona może jeszcze nie być widoczna na ekranie — naprawimy to w kroku xref:strona-wycentruj-podglad[].
 
 === Wyłącz kolory
 ...o ile nie są już wyłączone:
@@ -292,12 +306,13 @@ image::img/print_preview_black_and_white.png[align=center]
 
 [#ustaw-rozmiar-orientacje-strony]
 === Ustaw rozmiar i orientację strony
-Otwórz: `_Edit > *Drawing preferences* > Printing > Page_`. Tam:
+Otwórz: `_Edit > *Drawing preferences* > Printing > Page_`. Tamże:
 
 * Ustaw orientację strony w _Page Orientation_.
 * Ustaw rozmiar papieru w `_Paper > Paper size_`.
 
-=== Wycentruj stronę na ekranie
+[#strona-wycentruj-podglad]
+=== Wycentruj podgląd strony na ekranie
 Kliknij ikonę _Auto zoom to page(s)_ na pasku narzędzi:
 
 .Auto zoom to page(s)
@@ -305,47 +320,148 @@ image::img/presentation_auto_zoom_to_pages.png[align=center]
 
 [WARNING]
 --
-Nie pomyl ikony, i *nie kliknij* omyłkowo _Auto center_ (image:img/auto_center.png[]). To narzędzie automatycznie przesuwa elementy już umieszczone na stronie do jej centrum, czego odwrócenie nie zawsze jest łatwe.
+Nie pomyl ikony, i *nie kliknij* omyłkowo _Auto center_ (image:img/auto_center.png[]). To narzędzie automatycznie przesuwa elementy już rozmieszczone na stronie, do jej centrum, czego odwrócenie nie zawsze jest łatwe.
 
 My chcemy tylko łatwo wycentrować _podgląd_ strony na ekranie, a nie zmieniać jej zawartość.
 --
 
+[#ramka-dodaj]
 === Dodaj ramkę
 
-W panelu _Libray browser_ po prawej stronie ekranu (wspomniany w sekcji xref:#kluczowe-panele[]):
+Dodając ramkę po raz pierwszy, dodasz ją z biblioteki.
 
-* wybierz zakładkę "_File system_",
-* w rozwijalnym menu pod zakładką wybierz "_ramki_",
-* w panelu poniżej zaznacz "_ramki_",
-* powiększ lewy dolny róg białej strony na ekranie (jak na poniższej ilustracji),
-* w panelu poniżej `LMBx2` ramkę o rozmiarze i orientacji odpowiadających rozmiarowi i orientacji stronie (nadanych w kroku xref:ustaw-rozmiar-orientacje-strony[]),
+W panelu _Libray browser_ po prawej stronie ekranu (wspomniany w sekcji xref:#kluczowe-panele[]) wybierz ramkę:
+
+* wybierz zakładkę _File system_,
+* w rozwijalnym menu pod zakładką wybierz _ramki_,
+* w panelu poniżej zaznacz _ramki_,
+* powiększ lewy, dolny róg białej strony na ekranie (jak na poniższej ilustracji),
+* w panelu poniżej, `LMBx2` ramkę o rozmiarze i orientacji odpowiadających rozmiarowi i orientacji strony (nadanych w kroku xref:ustaw-rozmiar-orientacje-strony[]),
+** to "przyklei" ramkę do kursora myszy w głównym obszarze rysunku,
 * wybierz `_Snap > Grid_`,
-* kliknij w rogu, w miejscu przecięcia się szarych, wąskich krawędzi białego obszaru (punkt przedstawiony czerwonym celownikiem na poniższej ilustracji),
+* zakotwicz ramkę na stronie, klikając w miejscu przecięcia się szarych, wąskich krawędzi białego obszaru (punkt przedstawiony czerwonym celownikiem na poniższej ilustracji):
 
 image::img/anchor_frame.png[align=center]
 
-* wciśnij klawisz _Esc_, żeby odłożyć narzędzie,
-* pomniejsz/wycentruj widok, tak aby zobaczyć całą stronę (image:img/auto_zoom.png[]),
-* zaznacz ramkę (`LMB`),
-* wybierz `_Block > Explode_`.
+Gdy już raz wkleiłeś daną ramkę z biblioteki, ramka ta dostępna jest jako blok. Dla kolejnych rysunków możesz ramkę dalej dodawać z biblioteki, albo z panelu _Block List_, jak Ci wygodniej.
+
+Jeśli wolisz _Block List_:
+
+* zaznacz ją tam przez `RMB`,
+* wybierz _Insert Block_ z podręcznego menu,
+* zakotwicz ramkę na rysunku jak opisano w krokach powyżej.
 
 [NOTE]
-Wklejona ramka automatycznie dodaje nową warstwę o nazwie "_ramka tabliczka_". Warstwy tej nie usuwaj, bo stracisz ramki z tego i pozostałych stron w bieżącym pliku rysunku.
+Ramka wklejona z biblioteki automatycznie dodaje nową warstwę o nazwie "_ramka tabliczka_". Warstwy tej nie usuwaj, bo stracisz ramki i tabliczki z tego i pozostałych stron w bieżącym pliku rysunku.
 
 [NOTE]
-Ramka ta dodaje również blok o nazwie takiej, jaką wybrałeś z biblioteki (np. _A2 poziom_). Ten blok można usunąć, ale tylko jeśli wykonałeś `_Block > Explode_` na ramce, jak opisano powyżej.
+Ramka ta dodaje również blok o nazwie takiej, jaką wybrałeś z biblioteki (np. _ramka A2 poziom_).  Bloku tego nie usuwaj, bo stracisz ramki z tego i pozostałych stron w bieżącym pliku rysunku.
 
-=== Wypełnij tabliczkę
+[#tabliczka-dodaj-pierwszy-raz]
+=== Dodaj tabliczkę do rysunku — po raz pierwszy
 
-Wklejona powyżej ramka zawiera tabliczkę. Aby wypełnić ją właściwą treścią `LMBx2` teksty w indywidualnych polach aby je zmienić. Niektóre z pól zawierają tylko podkreślenia; w tym przypadku `LMBx2` te podkreślenia i zastąp je właściwym tekstem.
+Jeśli umieszczasz tabliczkę w bieżącym projekcie po raz pierwszy, będziesz umieszczał ją z _biblioteki_ (_Library Browser_).
+
+Upewnij się, że:
+
+* jesteś w przestrzeni papieru, tzn. w podglądzie wydruku strony, gdzie chcesz umieścić tabliczkę (xref:przestrzen-papieru-biezaca-strona[]),
+* bieżąca strona ma już ramkę (umieszczoną jak opisano w xref:#ramka-dodaj[], powyżej).
+
+Następnie:
+
+* `RMB` `_Libray Browser > File System > ramki > tabliczka 120x40_`
+* `LMB` _Insert_.
 
 [NOTE]
-Jeśli nowy tekst wykracza poza objętość pola, zmniejsz go w oknie dialogowym w polu "_Height_" w lewym górnym rogu. Wartość tego pola wyraża się w jednostkach rysunku.
+--
+Czynność tę potrzebujesz wykonać tylko raz.
 
-[#nowy-widok]
+Po wykonaniu tego kroku tabliczka jest "zarejestrowana" jako blok w bieżącym projekcie i widoczna w panelu _Block List_. Aby umieścić ją na kolejnych rysunkach, będziesz ją kopiować z tej listy.
+--
+
+[#tabliczka-wspolne-teksty]
+==== Wypełnij blok tabliczki — wspólne teksty
+
+* `RMB` blok tabliczki w panelu _Block List_,
+* wybierz _Edit block_.
+
+Jesteś teraz w "trybie edycji bloku", tzn. że edytujesz blok tabliczki w izolacji od reszty rysunku.
+
+* Wypełnij pola które zawierają teksty wspólne dla wszystkich stron w danym rysunku, takie jak _Inwestor_, _Obiekt_ czy _Temat_.
+** Aby zaktualizować pole, już zawierające tekst, `LMBx2` ten text.
+** Aby zaktualizować pole zawierające tylko podkreślenia, `LMBx2` te podkreślenia.
+* Zignoruj (na razie) pola, które będą zawierały teksty różniące się między stronami, takie jak _Rysunek_ czy _Nr rysunku_.
+* Po zaktualizowaniu wszystkich "wspólnych" pól, zakończ edycję bloku tabliczki, wybierając `_Block > Return to Main Drawing_`.
+
+[NOTE]
+--
+Krok ten potrzebujesz wykonać tylko raz.
+
+Odtąd, kopie tabliczki umieszczane na indywidualnych stronach będą dziedziczyć wspólne teksty, które w tym kroku przygotowałeś.
+
+--
+
+[NOTE]
+Edycja bloku tabliczki w _Block List_ nie zmienia domyślnej tabliczki zachowanej w bibliotece (_Library Browser_).
+
+[NOTE]
+Jeśli nowy tekst wykracza poza objętość pola, zmniejsz go w oknie dialogowym w polu _Height_ w lewym górnym rogu.
+
+[NOTE]
+Jeśli domyślny tekst (lub ciąg podkreśleń) zawierają tylko jeden wiersz, a potrzebujesz dodać następny, _odznacz_ opcję _Simple text_ w oknie dialogowym tekstu (o ile jest zaznaczona) i dodaj nową linię.
+
+[#tabliczka-rozbij]
+==== Rozbij tabliczkę
+
+* `RMB` tabliczkę na rysunku, aby ją zaznaczyć.
+* `_Block > Explode_`
+
+[NOTE]
+Wykonaj ten krok za każdym razem po kroku xref:tabliczka-wspolne-teksty[] oraz po umieszczeniu jej na kolejnych rysunkach (krok xref:#tabliczka-umiesc-kolejny-raz[]).
+
+.Dlaczego?
+[%collapsible]
+====
+Tabliczka wklejona w kroku xref:#tabliczka-dodaj-pierwszy-raz[] jest na razie xref:#def-blok[blokiem]. Oznacza to, że gdybyśmy w tej postaci zmienili jej treść, ta zmiana byłaby widoczna na wszystkich rysunkach gdzie tabliczka umieszczona jest jako blok.
+
+W przypadku pól zawierających teksty unikatowe dla danej strony rysunku — takich jak numer rysunku, czy jego tytuł — jest to niepożądane.
+
+Dlatego, aby nasze zmiany w tabliczce ograniczyły się tylko do bieżącego rysunku, musimy ją "rozbić" na indywidualne elementy, tak aby przestała być blokiem.
+====
+
+[#tabliczka-umiesc-kolejny-raz]
+=== Umieść tabliczkę na rysunku — po raz kolejny
+
+Zanim umieścisz tabliczkę na rysunku, najpierw upewnij się, że umieściłeś na bieżącej stronie właściwą ramkę, jak opisano w kroku xref:#ramka-dodaj[].
+
+* W panelu _Block List_, `RMB` blok tabliczki.
+* To pokaże zarys tabliczki w głównym obszarze rysunku, "przyklejony" do kursora myszy.
+* Zakotwicz tabliczkę na papierze, klikając prawy dolny róg ramki.
+* Rozbij wklejoną tabliczkę jak opisano w sekcji xref:#tabliczka-rozbij[].
+
+[WARNING]
+--
+Wklejając tabliczkę po raz pierwszy, wklejałeś ją z biblioteki (_Library Browser_). Pamiętaj, aby przy wszystkich _kolejnych_ stronach wklejać ją z _Block List_.
+
+To dlatego, że wkleiwszy ją po raz pierwszy, zaktualizowałeś definicję bloku tabliczki tekstami unikatowymi dla _bieżącego projektu_ (w kroku xref:tabliczka-wspolne-teksty[]). Tabliczka w bibliotece nie będzie zawierała tych uaktualnień, ale tabliczka w _Block List_ — tak, więc wklejając ją z listy bloków, skorzystasz z raz ustawionych tam tekstów.
+--
+
+==== Wypełnij tabliczkę tekstami unikatowymi dla bieżącego rysunku
+
+Tabliczka na każdej stronie zawiera teksty takie jak tytuł rysunku czy jego numer, które nie powtarzają się na innych stronach. Świeżo wklejona, domyślna tabliczka zawiera tylko podkreślenia w miejscu takich tekstów.
+
+Aby wypełnić tabliczką właściwą treścią, `LMBx2` teksty w indywidualnych polach aby je zmienić. Niektóre z pól zawierają tylko podkreślenia; w tym przypadku `LMBx2` te podkreślenia i zastąp je właściwym tekstem.
+
+[NOTE]
+Jeśli nowy tekst wykracza poza objętość pola, zmniejsz go w oknie dialogowym w polu _Height_ w lewym górnym rogu.
+
+[NOTE]
+Jeśli domyślny tekst (lub ciąg podkreśleń) zawierają tylko jeden wiersz, a potrzebujesz dodać następny, _odznacz_ opcję _Simple text_ w oknie dialogowym tekstu (o ile jest zaznaczona) i dodaj nową linię.
+
+[#widok-nowy]
 === Dodaj widok elementu
 
-Niektóre elementy są w modelu zorientowane w pionie lub poziomie. Takie elementy zwykle będziemy przedstawiać na papierze w tej samej orientacji, w jakiej znajdują się w modelu. Przykładem są słupy, poziome belki lub blachy czołowe:
+Niektóre elementy są w modelu zorientowane w pionie lub poziomie. Takie elementy zwykle będziemy przedstawiać na papierze w tej samej orientacji, w jakiej znajdują się w modelu. Przykładami są słupy, poziome belki lub blachy czołowe:
 
 [cols="a,a", frame=none, grid=none]
 |===
@@ -356,14 +472,14 @@ image::img/blacha_czolowa_model.png[]
 image::img/blacha_czolowa_papier.png[]
 |===
 
-Inne elementy są w modelu zorientowane "po skosie", jednak na papierze chcielibyśmy je obrócić dla lepszego wykorzystania miejsca na papierze, czytelności, i większej łatwości wymiarowania. Przykładem takich elementów są ukośne rygle, krokwie i narożne blachy wzmacniające węzeł słup-rygiel:
+Inne elementy są w modelu zorientowane "po skosie", jednak na papierze chcielibyśmy je obrócić dla lepszego wykorzystania miejsca na papierze, czytelności, i większej łatwości wymiarowania. Przykładami takich elementów są ukośne rygle, krokwie i narożne blachy wzmacniające węzeł słup-rygiel:
 
 [cols="a,a", frame=none, grid=none]
 |===
-|.Blacha narożna w modelu - po skosie
+|.Blacha narożna w modelu — po skosie
 image::img/blacha_narozna_model_skos.png[]
 
-|.Blacha narożna na papierze - w poziomie
+|.Blacha narożna na papierze — w poziomie
 image::img/blacha_narozna_papier_poziom.png[]
 |===
 
@@ -375,13 +491,11 @@ Zacznijmy od elementów zorientowanych w pionie. W późniejszej sekcji xref:now
 ===== Wejdź na warstwę "widoki"
 // todo common operations
 
-Upewnij się, że warstwa "widoki" jest aktywna w _Layer list_. Jeśli nie jest, to `LMB` jej nazwę w panelu _Layer list_.
+Upewnij się, że warstwa "_widoki_" jest aktywna w _Layer list_. Jeśli nie jest, to `LMB` jej nazwę w panelu _Layer list_.
 
 ===== Wejdź w przestrzeń papieru
 
-Upewnij się, że jesteś w "przestrzeni papieru" (_paper space_).
-
-Sekcja xref:przestrzen-papieru-nowa-strona[] opisuje jak przejść do tej przestrzeni.
+Upewnij się, że jesteś w "przestrzeni papieru" (_paper space_) bieżącej strony (xref:przestrzen-papieru-biezaca-strona[]).
 
 [#nowy-widok-poziom-zacznij-dodawac]
 ===== Zacznij dodawać widok
@@ -394,7 +508,7 @@ To chwilowo wyłącza podgląd wydruku (ten z białym tłem) i przenosi Cię do 
 [#nowy-widok-nadaj-skale]
 ===== Nadaj widokowi skalę
 
-Wprowadź skalę w jakiej chcesz przedstawić element na stronie w polu _Scale_. Możesz stosować notację 1:20, 1/20 lub 0.05.
+Wprowadź skalę w jakiej chcesz przedstawić element na stronie w polu _Scale_. Możesz stosować notacj 1:20, 1/20 lub 0.05.
 
 .Ustawianie skali widoku w momencie jego tworzenia
 image::img/presentation_viewport_set_scale.png[align=center]
@@ -419,7 +533,7 @@ Drugi klik zabiera Cię z powrotem do podglądu wydruku (tego z białym tłem).
 
 ===== Umieść widok na stronie
 
-Program czeka teraz na wskazanie pozycji gdzie chcesz umieścić widok elementu. Poruszaj kursorem myszy i zauważ, że widok elementu jest do niego "przyklejony" i rusza się razem z kursorem.
+Program oczekuje teraz wskazania pozycji na papierze, gdzie chcesz umieścić widok elementu. Poruszaj kursorem myszy i zauważ, że widok elementu jest do niego "przyklejony" i rusza się razem z kursorem.
 
 * Przesuń kursor myszy na miejsce gdzie widok ma być umieszczony.
 * `LMB`, żeby "zakotwiczyć" (wkleić) widok na stronie.
@@ -429,7 +543,7 @@ Program czeka teraz na wskazanie pozycji gdzie chcesz umieścić widok elementu.
 Jeśli potrzebujesz przesunąć widok w inne miejsce na stronie:
 
 * Wybierz strzałkę Pana Słodowego (image:img/arrow.png[]).
-* Zaznacz widok razem z towarzyszącymi mu wymiarami i opisami.
+* Zaznacz widok, razem z towarzyszącymi mu wymiarami i opisami.
 * Przesuń zaznaczone obiekty, wciskając klawisze strzałek na klawiaturze. Możesz te klawisze wcisnąć i trzymać wciśnięte (jeden na raz), puszczając je dopiero gdy widok znajdzie się na właściwym miejscu.
 
 [NOTE]
@@ -441,7 +555,7 @@ W praktyce, nie zawsze się to "złapanie" myszą udaje. W takim przypadku metod
 
 ===== Skoryguj skalę widoku
 
-Jeśli potrzebujesz skorygować skalę widoku, najłatwiej jest to zrobić usuwając go i tworząc go od nowa z właściwą skalą (jak opisano w sekcji xref:#nowy-widok[]).
+Jeśli potrzebujesz skorygować skalę widoku, najłatwiej jest to zrobić usuwając go i tworząc go od nowa z właściwą skalą (jak opisano w sekcji xref:#widok-nowy[]).
 
 Usunięcie widoku:
 
@@ -452,7 +566,7 @@ Usunięcie widoku:
 [#nowy-widok-skos]
 ==== Widok elementów zorientowanych po skosie
 
-Jak wspomniano wcześniej w xref:#nowy-widok[], widoki elementów zorientowanych w modelu "po skosie" wymagają obrócenia. Zwykle chcemy je obrócić tak, aby najdłuższa krawędź elementu znalazła się w poziomie lub pionie.
+Jak wspomniano wcześniej (w sekcji xref:#widok-nowy[]), widoki elementów zorientowanych w modelu "po skosie" wymagają obrócenia. Zwykle chcemy je obrócić tak, aby najdłuższa krawędź elementu znalazła się w poziomie lub pionie, dla lepszego wykorzystania miejsca na papierze, czytelności, i większej łatwości wymiarowania.
 
 [NOTE]
 --
@@ -461,7 +575,7 @@ Zwróć uwagę, że obracamy tu _widok_ elementu na papierze. Orientacja element
 
 Procedura dodawania widoków elementów zorientowanych po skosie jest podobna do tej dla widoków, które nie wymagają obracania, różniąc się od niej małymi tylko zmianami.
 
-Dlatego, zanim przystąpisz do umieszczania widoków elementów zorientowanych "skośnie", upewnij się, że masz dobrze opanowaną procedurę umieszczania widoków elementów zorientowanych w pionie/poziomie, jak opisano w xref:#nowy-widok[].
+Dlatego, zanim przystąpisz do umieszczania widoków elementów zorientowanych "skośnie", upewnij się, że masz dobrze opanowaną procedurę umieszczania widoków elementów zorientowanych w pionie/poziomie, jak opisano w xref:#widok-nowy[].
 
 [#kat-obrotu-widoku-znajdz]
 ===== Znajdź kąt obrotu widoku
@@ -487,6 +601,8 @@ image::img/blacha_narozna_model_skos_guide_line_info_angle_clicks.png[align=cent
 .Wartość zmierzonego kąta
 image::img/info_angle_command_line.png[align=center]
 
+* Usuń pomocniczą, poziomą linię.
+
 ===== Zacznij dodawać widok
 Zacznij dodawać widok jak opisano dla elementów poziomych w sekcji xref:nowy-widok-poziom-zacznij-dodawac[].
 
@@ -506,13 +622,13 @@ image::img/paste_viewport_enter_rotation.png[align=center]
 [#nowy-widok-obrys-skos]
 ===== Zaznacz obrys widoku
 
-Podobnie jak poprzednio, następny krok to obrysowanie widoku, i podobnie jak poprzednio, obrysujemy obszar nieco większy niż sam element.
+Podobnie jak poprzednio, następny krok to obrysowanie widoku, i znowu podobnie jak poprzednio, obrysujemy obszar nieco większy niż sam element.
 
-Podobnie jak opisano w xref:#nowy-widok-obrys-poziom[] dla elementów zorientowanych w poziomie, tutaj również musimy wyznaczyć dwa, przeciwległe rogi prostokąta obrysu.
+Tak jak opisano w xref:#nowy-widok-obrys-poziom[] dla elementów zorientowanych w poziomie, tutaj również musimy wyznaczyć dwa, przeciwległe rogi prostokąta obrysu.
 
-Tym razem, prostokąt obrysu wyświetlany w modelu będzie zorientowany po skosie, bo zmieniliśmy wartość kąta w polu _Rotation_. Weź to pod uwagę, wyznaczając narożniki (1) i (2):
+Tym razem, jednak, prostokąt obrysu wyświetlany w modelu będzie zorientowany po skosie, bo zmieniliśmy wartość kąta w polu _Rotation_. Weź to pod uwagę, wyznaczając narożniki (1) i (2):
 
-.Obrys widoku - prawidłowy
+.Obrys widoku — prawidłowy
 image::img/paste_viewport_outline_correct.png[align=center]
 
 Krawędź obrysu musi być równoległa do tej krawędzi elementu, dla której zmierzyliśmy kąt obrotu. Jeśli nie jest ona równoległa, podaj wartość kąta obrotu w polu _Rotation_ jako _ujemną_ (poprzedź ją znakiem minus).
@@ -524,8 +640,9 @@ image::img/paste_viewport_outline_incorrect.png[align=center]
 
 
 ==== Wejdź na warstwę "wymiary opisy (papier)"
-// todo common operations
-Upewnij się, że warstwa "wymiary opisy (papier)" jest aktywna w _Layer list_. Jeśli nie jest to `LMB` jej nazwę w panelu _Layer list_.
+Upewnij się, że warstwa "_wymiary opisy (papier)_" jest aktywna w _Layer list_:
+
+`LMB`: `_Layer list > wymiary opisy (papier)_`.
 
 ==== Nadaj wymiar elementowi
 
@@ -542,3 +659,7 @@ image::img/tool_bar_dimensions_scale_auto.png[align=center]
 // todo przesuń widok z wymiarami
 
 include::glossary.adoc[]
+
+// todo common operations
+// zaznaczanie elementów — z lewej na prawo i odwrotnie
+// linie konstrukcyjne
