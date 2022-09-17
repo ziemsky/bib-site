@@ -644,9 +644,9 @@ image::img/paste_viewport_outline_incorrect.png[align=center]
 
 
 ==== Wejdź na warstwę "wymiary opisy (papier)"
-Upewnij się, że warstwa "_wymiary opisy (papier)_" jest aktywna w `_Layer list_`:
+Upewnij się, że warstwa "_wymiary opisy (papier)_" jest aktywna w `_Layer List_`:
 
-* `LMB` `_Layer list > wymiary opisy (papier)_`.
+* `LMB` `_Layer List > wymiary opisy (papier)_`.
 
 ==== Nadaj wymiar elementowi
 
