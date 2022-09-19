@@ -306,7 +306,13 @@ image::img/print_preview_black_and_white.png[align=center]
 
 [#ustaw-rozmiar-orientacje-strony]
 === Ustaw rozmiar i orientację strony
-Otwórz: `_Edit > *Drawing preferences* > Printing > Page_`. Tamże:
+
+Kliknij klawisz `_Drawing Preferences_` (ustawienia rysunku):
+
+.Drawing Preferences
+image::img/drawing_preferences_button.png[align=center]
+
+Wybierz: `_Printing > Page_`. Tamże:
 
 * Ustaw orientację strony w `_Page Orientation_`.
 * Ustaw rozmiar papieru w `_Paper > Paper size_`.
