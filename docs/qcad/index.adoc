@@ -360,10 +360,7 @@ Jeśli wolisz `_Block List_`:
 * zakotwicz ramkę na rysunku jak opisano w krokach powyżej.
 
 [NOTE]
-Ramka wklejona z biblioteki automatycznie dodaje nową warstwę o nazwie "_ramka tabliczka_". Warstwy tej nie usuwaj, bo stracisz ramki i tabliczki z tego i pozostałych stron w bieżącym pliku rysunku.
-
-[NOTE]
-Ramka ta dodaje również blok o nazwie takiej, jaką wybrałeś z biblioteki (np. "_ramka A2 poziom_").  Bloku tego nie usuwaj, bo stracisz ramki z tego i pozostałych stron w bieżącym pliku rysunku.
+Ramka wklejona z biblioteki automatycznie dodaje blok o nazwie takiej, jaką wybrałeś z biblioteki (np. "_ramka A2 poziom_"). Bloku tego nie usuwaj, bo stracisz ramki z tego i pozostałych stron w bieżącym pliku rysunku.
 
 [#tabliczka-dodaj-pierwszy-raz]
 === Dodaj tabliczkę do rysunku — po raz pierwszy
