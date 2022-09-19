@@ -8,7 +8,7 @@
 == Wprowadzenie
 Ten przewodnik przedstawia podstawy QCAD'a. Wiele efektów w programie QCAD można osiągnąć na wiele sposobów.
 
-Przewodnik nie jest wyczerpującą encyklopedią programu, a raczej stara się przedstawić jeden, wyważony, łatwy w użyciu sposób produkji rysunków technicznych.
+Przewodnik nie jest wyczerpującą encyklopedią programu, a raczej stara się przedstawić jeden, wyważony, łatwy w użyciu sposób produkcji rysunków technicznych.
 
 Podane procedury skupiają się na użyciu myszy, ograniczając użycie klawiatury do koniecznego minimum. Powodem jest to, aby uczynić naukę podstaw QCAD'a jak najłatwiejszą, kosztem szybkości rysowania.
 
@@ -328,7 +328,9 @@ My chcemy tylko łatwo wycentrować _podgląd_ strony na ekranie, a nie zmienia�
 [#ramka-dodaj]
 === Dodaj ramkę
 
-Dodając ramkę po raz pierwszy, dodasz ją z biblioteki.
+Upewnij się, że warstwa "_ramka tabliczka_" jest aktywna w panelu `_Layer List_`. Jeśli nie jest, to `LMB` jej nazwę w tymże panelu.
+
+Dodając ramkę po raz pierwszy, dodasz ją z _biblioteki_.
 
 W panelu `_Libray browser_` po prawej stronie ekranu (wspomniany w sekcji xref:#kluczowe-panele[]) wybierz ramkę:
 
@@ -364,8 +366,9 @@ Jeśli umieszczasz tabliczkę w bieżącym projekcie po raz pierwszy, będziesz 
 
 Upewnij się, że:
 
-* jesteś w przestrzeni papieru, tzn. w podglądzie wydruku strony, gdzie chcesz umieścić tabliczkę (xref:przestrzen-papieru-biezaca-strona[]),
-* bieżąca strona ma już ramkę (umieszczoną jak opisano w xref:#ramka-dodaj[], powyżej).
+* Warstwa "_ramka tabliczka_" jest aktywna w panelu `_Layer List_`. Jeśli nie jest, to `LMB` jej nazwę w tymże panelu.
+* Jesteś w przestrzeni papieru, tzn. w podglądzie wydruku strony, gdzie chcesz umieścić tabliczkę (xref:przestrzen-papieru-biezaca-strona[]),
+* Bieżąca strona ma już ramkę (umieszczoną jak opisano w xref:#ramka-dodaj[], powyżej).
 
 Następnie:
 
@@ -432,8 +435,11 @@ Dlatego, aby nasze zmiany w tabliczce ograniczyły się tylko do bieżącego rys
 [#tabliczka-umiesc-kolejny-raz]
 === Umieść tabliczkę na rysunku — po raz kolejny
 
-Zanim umieścisz tabliczkę na rysunku, najpierw upewnij się, że umieściłeś na bieżącej stronie właściwą ramkę, jak opisano w kroku xref:#ramka-dodaj[].
+Zanim umieścisz tabliczkę na rysunku, upewnij się, że:
+* Umieściłeś na bieżącej stronie właściwą ramkę, jak opisano w kroku xref:#ramka-dodaj[].
+* Warstwa "_ramka tabliczka_" jest aktywna w panelu `_Layer List_`. Jeśli nie jest, to `LMB` jej nazwę w tymże panelu.
 
+Następnie:
 * W panelu `_Block List_`, `RMB` blok tabliczki.
 * Z menu podręcznego wybierz `_Insert Block_`.
 * To pokaże zarys tabliczki w głównym obszarze rysunku, "przyklejony" do kursora myszy.
