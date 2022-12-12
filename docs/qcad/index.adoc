@@ -244,7 +244,7 @@ Używając narzędzi rysowania, narysuj obiekty, które są tematem twojego rysu
 Trudno jest podać procedurę rysowania krok po kroku, jako że każdy rysunek jest inny. Z tego powodu, rozdział ten podaje jedynie kluczowe wskazówki, które powinny uczynić rysowanie łatwiejszym.
 
 [NOTE]
-W zależności który z "bazowych" plików ściągnąłeś w poprzednim kroku, model będziesz rysować w jednostkach takich jak odzwierciedlone w nazwie pliku (milimetry dla stali, centymetry dla obiektów drewnianych i stalowych).
+W zależności od tego, którego szablonu użyłeś do stworzenia rysunku w poprzednim kroku, model będziesz rysować w jednostkach takich jak odzwierciedlone w nazwie pliku (milimetry dla stali, centymetry dla obiektów drewnianych i stalowych).
 
 === Przejdź do "przestrzeni modelu"
 
