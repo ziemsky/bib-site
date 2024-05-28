@@ -439,10 +439,12 @@ Dlatego, aby nasze zmiany w tabliczce ograniczyły się tylko do bieżącego rys
 === Umieść tabliczkę na rysunku — po raz kolejny
 
 Zanim umieścisz tabliczkę na rysunku, upewnij się, że:
+
 * Umieściłeś na bieżącej stronie właściwą ramkę, jak opisano w kroku xref:#ramka-dodaj[].
 * Warstwa "_ramka tabliczka_" jest aktywna w panelu `_Layer List_`. Jeśli nie jest, to `LMB` jej nazwę w tymże panelu.
 
 Następnie:
+
 * W panelu `_Block List_`, `RMB` blok tabliczki.
 * Z menu podręcznego wybierz `_Insert Block_`.
 * To pokaże zarys tabliczki w głównym obszarze rysunku, "przyklejony" do kursora myszy.
